@@ -28,7 +28,7 @@ mkdocs build
 
 推送到 `main` 分支后，GitHub Actions 会自动构建并部署到 GitHub Pages。
 
-访问地址：https://alan233.github.io
+访问地址：https://phoenix-alan233.github.io
 
 ## 添加新文章
 

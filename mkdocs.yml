@@ -14,15 +14,15 @@ theme:
   palette:
     # 浅色模式
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: cyan
+      accent: cyan
       toggle:
         icon: material/brightness-7
         name: 切换至深色模式
     # 深色模式
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: cyan
+      accent: cyan
       toggle:
         icon: material/brightness-4
         name: 切换至浅色模式
