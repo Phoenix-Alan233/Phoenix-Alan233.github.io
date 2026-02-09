@@ -1,0 +1,66 @@
+site_name: Alan 的个人博客
+site_url: https://alan233.github.io/
+site_author: Alan
+site_description: Alan 的个人博客，分享技术与生活
+
+# Repository
+repo_name: alan233/alan233.github.io
+repo_url: https://github.com/alan233/alan233.github.io
+
+# 主题配置
+theme:
+  name: material
+  language: zh
+  palette:
+    # 浅色模式
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    # 深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+# 插件
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+# Markdown 扩展
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+
+# 导航结构
+nav:
+  - 首页: index.md
+  - 关于: about.md
