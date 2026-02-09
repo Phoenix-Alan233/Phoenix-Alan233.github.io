@@ -1,11 +1,11 @@
 site_name: Alan 的个人博客
-site_url: https://alan233.github.io/
+site_url: https://phoenix-alan233.github.io/
 site_author: Alan
 site_description: Alan 的个人博客，分享技术与生活
 
 # Repository
-repo_name: alan233/alan233.github.io
-repo_url: https://github.com/alan233/alan233.github.io
+repo_name: Phoenix-Alan233/Phoenix-Alan233.github.io
+repo_url: https://github.com/Phoenix-Alan233/Phoenix-Alan233.github.io
 
 # 主题配置
 theme:
