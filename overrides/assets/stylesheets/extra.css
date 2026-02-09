@@ -1,0 +1,380 @@
+/* === 主题变量定义 === */
+:root {
+  /* 浅色模式透明度设置 */
+  --md-primary-fg-color--transparent: rgba(255, 255, 255, 0.85);
+  --md-tabs-bg-color: rgba(240, 248, 255, 0.9); /* 导航栏背景色 - 淡蓝色 */
+  --md-default-bg-color: #ffffff;  /* 内容区域背景 - 纯白 */
+
+  /* 选中文本颜色 */
+  --selection-bg-color: var(--md-primary-fg-color);
+  --selection-text-color: #fff;
+
+  --admonition-border-left-width: 0.2rem;
+  --base-border-radius: 1rem;
+  --card-hover-shadow: 0 0 0.2rem #ffffff40;
+}
+
+[data-md-color-scheme="slate"] {
+  /* 深色模式透明度设置 */
+  --md-primary-fg-color--transparent: rgba(0, 0, 0, 0.85);
+  --md-tabs-bg-color: rgba(30, 35, 40, 0.95); /* 导航栏背景色 - 深灰蓝 */
+  --md-default-bg-color: #121212;  /* 内容区域背景 - 深色 */
+
+  /* 深色模式选中文本颜色 */
+  --selection-bg-color: var(--md-primary-fg-color);
+  --selection-text-color: #fff;
+}
+
+/* === 文本选中颜色设置 === */
+::selection {
+  background-color: var(--selection-bg-color);
+  color: var(--selection-text-color);
+  text-shadow: none;
+}
+
+/* === 链接颜色设置 === */
+/* 修改选择器排除footer内的所有链接 */
+.md-typeset a:not(.md-button):not(.md-nav__link):not(.headerlink):not(.md-footer__link):not(footer a) {
+  color: var(--md-typeset-a-color, var(--md-accent-fg-color));
+}
+
+.md-typeset a:not(.md-button):not(.md-nav__link):not(.headerlink):not(.md-footer__link):not(footer a):hover,
+.md-typeset a:not(.md-button):not(.md-nav__link):not(.headerlink):not(.md-footer__link):not(footer a):active,
+.md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* === 固定顶部结构 === */
+/* 标题栏 - 始终固定在顶部 */
+.md-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  background-color: var(--md-primary-fg-color--transparent) !important;
+  backdrop-filter: blur(8px);
+  transition: top 0.3s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* 添加底部边框 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* 添加轻微阴影 */
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* 深色模式边框 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 导航栏容器 - 只包含导航栏 */
+.nav-container {
+  position: fixed;
+  top: calc(2.4rem + var(--banner-height, 0px)); /* 标题栏高度 + 通知栏高度 */
+  width: 100%;
+  z-index: 10;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+              opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translateY(0);
+  overflow: hidden;
+  perspective: 1000px; /* 3D透视效果 */
+}
+
+/* 导航栏容器隐藏状态 */
+.nav-container--hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 导航栏样式 */
+.md-tabs {
+  background-color: var(--md-tabs-bg-color) !important; /* 使用自定义导航栏背景色 */
+  backdrop-filter: blur(8px);
+  display: flex;
+  overflow: hidden;
+  height: 2.4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* 添加底部边框 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04); /* 添加轻微阴影 */
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* 深色模式边框 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 通知栏样式 - 恢复默认位置（标题栏下方） */
+.md-banner {
+  position: fixed;
+  top: 2.4rem; /* 标题栏高度 */
+  width: 100%;
+  z-index: 10;
+  transform-style: preserve-3d; /* 启用3D变换 */
+  transform-origin: top center; /* 翻转中心点 */
+  will-change: transform, opacity; /* 优化动画性能 */
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+/* 关闭按钮保持可见 */
+.md-banner__close {
+  z-index: 12;
+  transition: transform 0.3s ease;
+}
+
+.md-banner__close:hover {
+  transform: scale(1.2);
+}
+
+/* === 内容区域调整 === */
+/* 初始上边距 = 标题栏高度 + 通知栏高度 + 导航栏高度 */
+.md-main {
+  margin-top: calc(2.4rem + var(--banner-height, 0px) + 2.4rem) !important;
+  transition: margin-top 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  background-color: var(--md-default-bg-color) !important;
+}
+
+/* 确保内容容器也使用正确的背景色 */
+.md-content {
+  background-color: var(--md-default-bg-color);
+}
+
+/* 添加内容区域顶部微妙的阴影，增强分层感 */
+.md-main__inner {
+  padding-top: 1rem;
+}
+
+/* 当导航栏隐藏时减少上边距 */
+.nav-container--hidden ~ .md-main {
+  margin-top: calc(2.4rem + var(--banner-height, 0px)) !important; /* 标题栏高度 + 通知栏高度 */
+}
+
+/* 当通知栏关闭时调整 */
+.md-banner--hidden {
+  height: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden;
+}
+
+/* 语言切换按钮确保可见 */
+.md-header__option {
+  z-index: 12;
+}
+
+.md-select {
+  z-index: 13;
+}
+
+/* === 导航栏标签动画效果 === */
+.md-tabs__list {
+  display: flex;
+  width: 100%;
+  padding: 0 0.8rem;
+  /* 垂直居中 */
+  align-items: center;
+}
+
+.md-tabs__item {
+  position: relative;
+  overflow: visible; /* 允许悬停效果溢出 */
+  transform: translateX(-50px); /* 初始位置在左侧 */
+  opacity: 0;
+  z-index: 1;
+  /* 使用transition实现更自然的动画 */
+  transition:
+    transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* 添加与默认导航栏相同的垂直间距 */
+  margin: 0.2rem 0;
+}
+
+.md-tabs__item.animate-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* 新增：导航栏显示时的动画状态 */
+.nav-container:not(.nav-container--hidden) .md-tabs__item {
+  animation: tabAppear 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* 新增：导航栏隐藏时的状态 */
+.nav-container--hidden .md-tabs__item {
+  animation: none !important;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+@keyframes tabAppear {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* 创建悬停上浮效果 - 使用伪元素避免布局变化 */
+.md-tabs__item::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 10px);
+  background: transparent;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.md-tabs__item:hover::before {
+  transform: translateY(-3px);
+}
+
+/* 标签上浮效果 - 通过内部元素实现 */
+.md-tabs__link {
+  position: relative;
+  display: inline-block;
+  /* 调整内边距匹配默认样式 */
+  padding: 0.5rem 1.0rem; /* 默认是0.5rem 1.2rem */
+  /* 增加垂直间距 */
+  margin: 0.2rem 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+  will-change: transform;
+  /* 保持文本居中 */
+  line-height: 1.4;
+}
+
+.md-tabs__item:hover .md-tabs__link {
+  transform: translateY(-2px); /* 减少上浮距离 */
+}
+
+/* 活动标签效果 - 颜色突出 */
+.md-tabs__item--active .md-tabs__link {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: bold;
+}
+
+/* 标签下划线 - 指示条 */
+.md-tabs__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--md-accent-fg-color);
+  transform: scaleX(0); /* 初始状态隐藏 */
+  transform-origin: right; /* 从右侧开始 */
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* 鼠标悬停时指示条从左向右滑动 */
+.md-tabs__item:hover .md-tabs__link::after {
+  transform: scaleX(1); /* 显示完整宽度 */
+  transform-origin: left; /* 从左向右滑动 */
+}
+
+/* 活动标签指示条常显 */
+.md-tabs__item--active .md-tabs__link::after {
+  transform: scaleX(1); /* 始终显示 */
+  transform-origin: left; /* 从左向右滑动 */
+}
+
+/* 涟漪效果样式 */
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  background-color: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+  will-change: transform, opacity; /* 优化动画性能 */
+}
+
+/* === 涟漪效果动画 === */
+@keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* 滚动到顶部时的动画 */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.md-tabs:not(.md-tabs--hidden) {
+  animation: fadeInDown 0.3s ease-out;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 76.1875em) {
+  .md-tabs {
+    display: none;
+  }
+
+  .nav-container {
+    top: calc(2.4rem + var(--banner-height, 0px));
+  }
+
+  .md-main {
+    margin-top: calc(2.4rem + var(--banner-height, 0px)) !important;
+  }
+
+  .nav-container--hidden ~ .md-main {
+    margin-top: calc(2.4rem + var(--banner-height, 0px)) !important;
+  }
+
+  /* 移动设备上禁用复杂动画 */
+  .md-tabs__item {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+
+  .md-tabs__item::before,
+  .md-tabs__item:hover .md-tabs__link {
+    transform: none !important;
+  }
+
+  .md-banner {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  /* 移动设备上禁用指示条动画 */
+  .md-tabs__link::after {
+    display: none;
+  }
+
+  /* 移动端标签链接内边距 */
+  .md-tabs__link {
+    padding: 0.4rem 0.8rem; /* 移动端稍小的内边距 */
+  }
+}
+
+/* 添加初始状态避免布局闪烁 */
+body:not(.js-loaded) .nav-container {
+  opacity: 0;
+}
+
+/* 平滑过渡效果 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 确保整体页面背景色正确 */
+body {
+  background-color: var(--md-default-bg-color);
+}
+
+/* 侧边栏背景色调整，与主体内容保持一致 */
+.md-sidebar {
+  background-color: var(--md-default-bg-color);
+}
