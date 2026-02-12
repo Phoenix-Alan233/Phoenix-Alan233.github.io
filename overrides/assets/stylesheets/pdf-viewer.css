@@ -1,0 +1,49 @@
+/* PDF 查看器样式 */
+.pdf-container {
+  width: 100%;
+  height: 80vh;
+  border: 2px solid var(--md-default-fg-color--light);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #525659;
+  position: relative;
+}
+
+.pdf-container object {
+  width: 100%;
+  height: 100%;
+}
+
+.pdf-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.pdf-download {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: var(--md-accent-fg-color);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: white !important;
+}
