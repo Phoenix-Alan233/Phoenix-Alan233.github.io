@@ -1,5 +1,28 @@
+/* JetBrains Mono is self-hosted; Chinese text uses the visitor's system fonts. */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono.woff2") format("woff2-variations");
+}
+
+/* Match the paragraph indentation used by the original blog. */
+/*
+ .md-typeset p {
+   text-indent: 2em;
+ }
+
+ .md-typeset li > p {
+   text-indent: 0;
+ }
+*/
+
 /* === 主题变量定义 === */
 :root {
+  --md-text-font: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --md-code-font: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
   /* 浅色模式透明度设置 */
   --md-primary-fg-color--transparent: rgba(255, 255, 255, 0.85);
   --md-tabs-bg-color: rgba(240, 248, 255, 0.9); /* 导航栏背景色 - 淡蓝色 */

@@ -23,9 +23,7 @@ theme:
   name: material
   language: zh
   custom_dir: overrides  # 主题覆盖目录
-  font:
-    text: Ubuntu        # 正文字体
-    code: Roboto Mono   # 代码字体
+  font: false  # 使用本地字体，不请求 Google Fonts
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -91,6 +89,7 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.magiclink
   - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
@@ -120,7 +119,11 @@ nav:
       - 导数: 数学/导数.md
       - 好题分享: 数学/好题分享.md
       - 高考、强基与竞赛: 数学/高考、强基与竞赛.md
-  - ACM / ICPC: .md
+  - ACM / ICPC:
+    - 概览: ACM/index.md
+    - ZJU Summer:
+      - Summer 2025: ACM/ZJU-Summer/Summer-2025.md
+      - Summer 2026: ACM/ZJU-Summer/Summer-2026.md
   - CTF:
     - 学习笔记:
       - 综述: CTF/overall.md
