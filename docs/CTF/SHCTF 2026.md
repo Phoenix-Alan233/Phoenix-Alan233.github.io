@@ -2,7 +2,9 @@
 
 > 2026.02
 
-<div class="pdf-container">
+!pdf[../../assets/pdf/SHCTF 2026 WriteUp.pdf]
+
+<!-- <div class="pdf-container">
   <object data="../../assets/pdf/SHCTF 2026 WriteUp.pdf" type="application/pdf">
     <div class="pdf-fallback">
       <p>您的浏览器不支持 PDF 预览</p>
@@ -19,4 +21,4 @@
   <a href="../../assets/pdf/SHCTF 2026 WriteUp.pdf" class="download-btn" download>
     📥 下载 WriteUp
   </a>
-</div>
+</div> -->

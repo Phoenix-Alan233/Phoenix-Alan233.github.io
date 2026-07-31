@@ -20,17 +20,24 @@
 
 /* === 主题变量定义 === */
 :root {
-  --md-text-font: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --md-text-font: "LXGW WenKai Screen", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   --md-code-font: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 
+  /* 浅色模式颜色 */
+  --md-primary-fg-color: #efefef;
+  --md-primary-bg-color: #000000;
+  --md-typeset-a-color: #555555;
+  --md-code-bg-color: #fafafa;
+  --md-code-fg-color: var(--md-typeset-color);
+
   /* 浅色模式透明度设置 */
-  --md-primary-fg-color--transparent: rgba(255, 255, 255, 0.85);
-  --md-tabs-bg-color: rgba(240, 248, 255, 0.9); /* 导航栏背景色 - 淡蓝色 */
+  --md-primary-fg-color--transparent: rgba(250, 250, 250, 0.85);
+  --md-tabs-bg-color: rgba(249, 249, 249, 0.95); /* 导航栏背景色 - 柔和灰白 */
   --md-default-bg-color: #ffffff;  /* 内容区域背景 - 纯白 */
 
   /* 选中文本颜色 */
-  --selection-bg-color: var(--md-primary-fg-color);
-  --selection-text-color: #fff;
+  --selection-bg-color: #b3d9ff;
+  --selection-text-color: #000;
 
   --admonition-border-left-width: 0.2rem;
   --base-border-radius: 1rem;
@@ -38,13 +45,26 @@
 }
 
 [data-md-color-scheme="slate"] {
+  /* 深色模式颜色 */
+  --md-default-bg-color: #161616;
+  --md-default-bg-color--light: #161616;
+  --md-default-bg-color--lighter: #161616;
+  --md-default-bg-color--lightest: #161616;
+  --md-default-fg-color: rgba(255,255,255,0.9);
+  --md-default-fg-color--light: rgba(255,255,255,0.85);
+  --md-default-fg-color--lighter: rgba(255,255,255,0.8);
+  --md-default-fg-color--lightest: rgba(255,255,255,0.6);
+  --md-primary-fg-color: #0d0d0d;
+  --md-typeset-a-color: #d3d3d3;
+  --md-code-bg-color: #1d1d1d;
+
   /* 深色模式透明度设置 */
   --md-primary-fg-color--transparent: rgba(0, 0, 0, 0.85);
   --md-tabs-bg-color: rgba(30, 35, 40, 0.95); /* 导航栏背景色 - 深灰蓝 */
   --md-default-bg-color: #121212;  /* 内容区域背景 - 深色 */
 
   /* 深色模式选中文本颜色 */
-  --selection-bg-color: var(--md-primary-fg-color);
+  --selection-bg-color: #4a5f7a;
   --selection-text-color: #fff;
 }
 
@@ -400,4 +420,33 @@ body {
 /* 侧边栏背景色调整，与主体内容保持一致 */
 .md-sidebar {
   background-color: var(--md-default-bg-color);
+}
+
+/* === 字体大小和排版优化 === */
+/* 大屏幕字体放大 */
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 137.5%;
+  }
+}
+
+/* 正文字体大小 */
+.md-typeset {
+  font-size: 0.7rem;
+}
+
+/* 标题字重优化 */
+.md-typeset h1, .md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.md-typeset h3, .md-typeset h4 {
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* 行内代码字体大小继承 */
+.md-typeset code:not(pre code) {
+  font-size: inherit;
 }

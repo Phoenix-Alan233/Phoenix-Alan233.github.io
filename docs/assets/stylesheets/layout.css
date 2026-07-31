@@ -1,0 +1,132 @@
+/* TonyCrane 风格的排版优化 */
+
+/* 更好的内容宽度和边距 */
+.md-content {
+    max-width: 100%;
+}
+
+.md-content__inner {
+    margin: 0 auto;
+    padding-left: 1.2rem;
+    padding-right: 1.6rem;
+}
+
+/* 代码块优化 */
+.md-typeset pre {
+    border-radius: 0.3rem;
+}
+
+.md-typeset pre > code {
+    border-radius: 0.3rem;
+}
+
+/* 引用块样式优化 */
+.md-typeset blockquote {
+    border-left: 0.2rem solid var(--md-accent-fg-color);
+    padding-left: 1rem;
+    color: var(--md-default-fg-color--light);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+    color: #999999;
+}
+
+/* Admonition 优化 */
+.md-typeset .admonition {
+    border-radius: 0.3rem;
+    border-left: 0.2rem solid;
+}
+
+/* 表格样式优化 */
+.md-typeset table:not([class]) {
+    border-radius: 0.3rem;
+    display: table;
+    overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+    font-weight: 600;
+}
+
+/* 列表间距优化 */
+.md-typeset ul, .md-typeset ol {
+    margin: 0.6em 0;
+}
+
+.md-typeset li {
+    margin: 0.3em 0;
+}
+
+/* 段落间距 */
+.md-typeset p {
+    margin: 0.8em 0;
+}
+
+/* 标题间距优化 */
+.md-typeset h1 {
+    margin: 0 0 1.25rem;
+}
+
+.md-typeset h2 {
+    margin: 1.6rem 0 0.8rem;
+}
+
+.md-typeset h3 {
+    margin: 1.4rem 0 0.6rem;
+}
+
+.md-typeset h4 {
+    margin: 1.2rem 0 0.6rem;
+}
+
+/* 行高优化，提高可读性 */
+.md-typeset {
+    line-height: 1.8;
+}
+
+/* 链接悬停效果 */
+.md-typeset a {
+    transition: color 0.2s ease;
+}
+
+/* 图片居中和圆角 */
+.md-typeset img {
+    border-radius: 0.3rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 水平分割线 */
+.md-typeset hr {
+    border: none;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+    margin: 2rem 0;
+}
+
+/* 代码块复制按钮优化 */
+.md-clipboard {
+    border-radius: 0.2rem;
+}
+
+/* TOC 目录优化 */
+.md-nav--secondary {
+    border-left: 0.1rem solid var(--md-default-fg-color--lightest);
+}
+
+.md-nav--secondary .md-nav__link {
+    padding: 0.2rem 0.6rem;
+    margin: 0.1rem 0;
+}
+
+.md-nav--secondary .md-nav__item {
+    margin: 0;
+}
+
+.md-nav--secondary .md-nav__list {
+    margin: 0;
+}
+
+/* 页脚优化 */
+.md-footer {
+    margin-top: 2rem;
+}

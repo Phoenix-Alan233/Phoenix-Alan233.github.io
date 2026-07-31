@@ -8,7 +8,10 @@ repo_url: https://github.com/Phoenix-Alan233/Phoenix-Alan233.github.io
 
 # 自定义样式和脚本
 extra_css:
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
   - assets/stylesheets/extra.css
+  - assets/stylesheets/layout.css
+  - assets/stylesheets/card.css
   - assets/stylesheets/rounded-corners.css
   - assets/stylesheets/pdf-viewer.css
 
@@ -27,11 +30,6 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
-    # 自动跟随系统主题
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: 切换至深色模式
     # 深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -47,7 +45,7 @@ theme:
       accent: teal
       toggle:
         icon: material/lightbulb
-        name: 跟随系统主题
+        name: 切换至深色模式
   features:
     - navigation.instant
     - navigation.tracking
@@ -71,6 +69,10 @@ plugins:
       lang:
         - zh
         - en
+
+# Hooks
+hooks:
+  - hooks/pdf_embed.py
 
 # Markdown 扩展
 markdown_extensions:
@@ -119,8 +121,11 @@ nav:
       - 导数: 数学/导数.md
       - 好题分享: 数学/好题分享.md
       - 高考、强基与竞赛: 数学/高考、强基与竞赛.md
-  - ACM / ICPC:
+  - ACM/ICPC:
     - 概览: ACM/index.md
+    - 专题学习:
+      - 线段树进阶: ACM/专题学习/线段树进阶.md
+      - 反演进阶: ACM/专题学习/反演进阶.md
     - ZJU Summer:
       - Summer 2025: ACM/ZJU-Summer/Summer-2025.md
       - Summer 2026: ACM/ZJU-Summer/Summer-2026.md
