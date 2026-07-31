@@ -11,6 +11,23 @@
     padding-right: 1.6rem;
 }
 
+/* 数学公式优化 */
+.md-typeset .MathJax {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.md-typeset mjx-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+/* 行内公式 */
+.md-typeset mjx-container[display="true"] {
+    margin: 1em 0;
+}
+
 /* 代码块优化 */
 .md-typeset pre {
     border-radius: 0.3rem;
@@ -22,19 +39,26 @@
 
 /* 引用块样式优化 */
 .md-typeset blockquote {
-    border-left: 0.2rem solid var(--md-accent-fg-color);
+    border-left: 0.1rem solid var(--md-accent-fg-color);
     padding-left: 1rem;
     color: var(--md-default-fg-color--light);
+    background-color: transparent;
+    margin-left: 0;
 }
 
 [data-md-color-scheme="slate"] .md-typeset blockquote {
     color: #999999;
+    background-color: transparent;
 }
 
 /* Admonition 优化 */
 .md-typeset .admonition {
     border-radius: 0.3rem;
-    border-left: 0.2rem solid;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition {
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* 表格样式优化 */

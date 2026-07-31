@@ -422,6 +422,11 @@ body {
   background-color: var(--md-default-bg-color);
 }
 
+/* 引用块左侧线条变细 */
+.md-typeset blockquote {
+  border-left-width: 3px !important;
+}
+
 /* === 字体大小和排版优化 === */
 /* 大屏幕字体放大 */
 @media screen and (min-width: 960px) {
