@@ -1,0 +1,2324 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Alan">
+      
+      
+        <link rel="canonical" href="https://phoenix-alan233.github.io/%E6%95%B0%E5%AD%A6/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../%E5%AF%BC%E6%95%B0/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>圆锥曲线 - Alan233 的小站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.tonycrane.cc/lxgw/lxgwscreen.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/layout.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/card.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/rounded-corners.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/pdf-viewer.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Alan233 的小站" class="md-header__button md-logo" aria-label="Alan233 的小站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Alan233 的小站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              圆锥曲线
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="切换至浅色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至浅色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="teal"  aria-label="切换至深色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至深色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Phoenix-Alan233/Phoenix-Alan233.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Phoenix-Alan233/Phoenix-Alan233.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  数学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ACM/" class="md-tabs__link">
+          
+  
+  
+  ACM/ICPC
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../CTF/" class="md-tabs__link">
+          
+  
+  
+  CTF
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../System/Linux-101/" class="md-tabs__link">
+          
+  
+  
+  计算机系统
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  关于
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Alan233 的小站" class="md-nav__button md-logo" aria-label="Alan233 的小站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Alan233 的小站
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Phoenix-Alan233/Phoenix-Alan233.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Phoenix-Alan233/Phoenix-Alan233.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    高中数学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    高中数学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    圆锥曲线
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    圆锥曲线
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高考卷好题记录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        模拟卷好题记录
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AF%BC%E6%95%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A5%BD%E9%A2%98%E5%88%86%E4%BA%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    好题分享
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AB%98%E8%80%83%E3%80%81%E5%BC%BA%E5%9F%BA%E4%B8%8E%E7%AB%9E%E8%B5%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    高考、强基与竞赛
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ACM/ICPC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ACM/ICPC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ACM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    专题学习
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    专题学习
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ACM/%E4%B8%93%E9%A2%98%E5%AD%A6%E4%B9%A0/%E7%BA%BF%E6%AE%B5%E6%A0%91%E8%BF%9B%E9%98%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    线段树进阶
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ACM/%E4%B8%93%E9%A2%98%E5%AD%A6%E4%B9%A0/%E5%8F%8D%E6%BC%94%E8%BF%9B%E9%98%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    反演进阶
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZJU Summer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ZJU Summer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ACM/ZJU-Summer/Summer-2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ACM/ZJU-Summer/Summer-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CTF
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CTF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    学习笔记
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    学习笔记
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CTF/notes/Crypto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crypto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CTF/notes/Pwn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pwn
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CTF/notes/Reverse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reverse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WriteUp
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WriteUp
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CTF/writeup/SHCTF-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SHCTF 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System/Linux-101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux 101/201
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System/Computer-Architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高考卷好题记录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        模拟卷好题记录
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">圆锥曲线<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<blockquote>
+<p>这是我高中时名为"圆曲妙妙屋"的专栏，谨以此记录我的青春。</p>
+<p>Fri, 17th Nov 2023, 杭州二中小 Z</p>
+</blockquote>
+<h2 id="_2">高考卷好题记录<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">完成情况</th>
+<th style="text-align: center;">题源</th>
+<th style="text-align: center;">命题背景</th>
+<th style="text-align: center;">简洁解法</th>
+<th style="text-align: center;">收录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2024·上海春考</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2023·全国甲卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2023·全国乙卷</td>
+<td style="text-align: center;">极点极线, 调和点列, 调和线束</td>
+<td style="text-align: center;">齐次化</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2023·新高考 I 卷</td>
+<td style="text-align: center;">[N/A]</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2023·新高考 II 卷</td>
+<td style="text-align: center;">自极三角形</td>
+<td style="text-align: center;">齐次化, 第三定义</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2023·北京卷</td>
+<td style="text-align: center;">帕斯卡定理 (退化), 仿射变换, 四点共圆</td>
+<td style="text-align: center;">同一法</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2023·上海卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2023·天津卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2022·全国甲卷</td>
+<td style="text-align: center;">(抛物线) 蝴蝶定理</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2022·全国乙卷</td>
+<td style="text-align: center;">极点极线, 调和点列, 调和线束</td>
+<td style="text-align: center;">齐次化, 同一法</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2022·新高考 I 卷</td>
+<td style="text-align: center;">圆锥曲线上的四点共圆 (退化), 拉格朗日中值的几何意义</td>
+<td style="text-align: center;">齐次化</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2022·新高考 II 卷</td>
+<td style="text-align: center;">渐近线引理, 相似</td>
+<td style="text-align: center;">曲线系, 同一法</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2022·浙江卷</td>
+<td style="text-align: center;">对合变换</td>
+<td style="text-align: center;">齐次化, 参数方程</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2022·天津卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">参数方程</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2021·全国甲卷</td>
+<td style="text-align: center;">彭赛列闭合定理</td>
+<td style="text-align: center;">设点法</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2021·全国乙卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2021·新高考 I 卷</td>
+<td style="text-align: center;">圆锥曲线上的四点共圆</td>
+<td style="text-align: center;">曲线系, 参数方程</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2021·新高考 II 卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2021·浙江卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">设线硬算 (待优化)</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2021·北京卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2020·全国 I 卷</td>
+<td style="text-align: center;">自极三角形</td>
+<td style="text-align: center;">齐次化</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2020·全国 III 卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2020·新高考 I 卷</td>
+<td style="text-align: center;">对合变换</td>
+<td style="text-align: center;">齐次化</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2020·浙江卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">设点法, 中点弦</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2020·北京卷</td>
+<td style="text-align: center;">极点极线, 调和点列, 调和线束</td>
+<td style="text-align: center;">齐次化</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">2020·天津卷</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: center;">easy</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition problem">
+<p class="admonition-title">2023·全国乙卷，20（命题背景：极点极线, 调和点列, 调和线束）</p>
+<p>已知椭圆 <span class="arithmatex">\(\mathrm{C}:\ \frac{y^2}{9}+\frac{x^2}{4}=1\)</span>，点 <span class="arithmatex">\(\mathrm{A}\ (-2,0)\)</span>。</p>
+<p>（2）过点 <span class="arithmatex">\(\mathrm{T}\ (-2,3)\)</span> 的直线交 <span class="arithmatex">\(\mathrm{C}\)</span> 于 <span class="arithmatex">\(\mathrm{P,Q}\)</span> 两点，直线 <span class="arithmatex">\(\mathrm{AP,AQ}\)</span> 与 <span class="arithmatex">\(y\)</span> 轴的交点分别为 <span class="arithmatex">\(\mathrm{M,N}\)</span>，证明：线段 <span class="arithmatex">\(\mathrm{MN}\)</span> 的中点为定点。</p>
+</div>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_11.png" alt="图片 mock_11.png" style="width: 50%;">
+</div>
+
+<p><strong>极点极线 + 调和点列 + 调和线束</strong></p>
+<p>注意到 <span class="arithmatex">\(\mathrm{AB}\)</span> 为 <span class="arithmatex">\(\mathrm{T}\)</span> 的极线，故 <span class="arithmatex">\(\mathrm{T,P,R,Q}\)</span> 为调和点列。</p>
+<p>调和线束 <span class="arithmatex">\(\mathrm{AT,AP,AR,AQ}\)</span> 与 <span class="arithmatex">\(y\)</span> 轴分别交于 <span class="arithmatex">\(\mathrm{D,M,B,N}\)</span>，故 <span class="arithmatex">\(\mathrm{D,M,B,N}\)</span> 为调和点列，其中 <span class="arithmatex">\(\mathrm{D}\)</span> 为无穷远点。</p>
+<p>由 <span class="arithmatex">\(\mathrm{\frac{|NB|}{|BM|}=\frac{|ND|}{|DM|}=1}\)</span> 知 <span class="arithmatex">\(\mathrm{B}\)</span> 为 <span class="arithmatex">\(\mathrm{MN}\)</span> 中点，故定点为 <span class="arithmatex">\((0,3)\)</span>。</p>
+<p><strong>齐次化</strong></p>
+<p>设点 <span class="arithmatex">\(\mathrm{P}\ (x_1,y_1),\ \mathrm{Q}\ (x_2,y_2)\)</span>，则 <span class="arithmatex">\(\mathrm{AP}:\ y=\frac{y_1}{x_1+2}(x+2)\)</span>，故 <span class="arithmatex">\(\mathrm{M}\ (0,\frac{2y_1}{x_1+2})\)</span>。同理 <span class="arithmatex">\(\mathrm{N}\ (0,\frac{2y_2}{x_2+2})\)</span>。</p>
+<p>设点 <span class="arithmatex">\(\mathrm{M,N}\)</span> 的中点为 <span class="arithmatex">\(\mathrm{R}\ (0,\frac{y_1}{x_1+2}+\frac{y_2}{x_2+2})\)</span>，这启发我们用齐次化处理。</p>
+<p>设 <span class="arithmatex">\(\mathrm{PQ}: m(x+2)+ny=1\)</span>，由 <span class="arithmatex">\(\mathrm{PQ}\)</span> 过 <span class="arithmatex">\((-2,3)\)</span> 知 <span class="arithmatex">\(n=\frac{1}{3}\)</span>。</p>
+<p>联立得 <span class="arithmatex">\(\frac{1}{9}\left(\frac{y}{x+2}\right)^2-\frac{1}{3}\left(\frac{y}{x+2}\right)+\frac{1}{4}-m=0\)</span>，因此 <span class="arithmatex">\(y_R=3\)</span>，即定点 <span class="arithmatex">\((0,3)\)</span>。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2023·新高考 II 卷，21（命题背景：自极三角形）</p>
+<p>已知双曲线 <span class="arithmatex">\(\mathrm{C}:\ \frac{x^2}{4}-\frac{y^2}{16}=1\)</span>，左右顶点分别为 <span class="arithmatex">\(\mathrm{A_1,A_2}\)</span>。</p>
+<p>（2）过点 <span class="arithmatex">\(\mathrm{T}\ (-4,0)\)</span> 的直线交 <span class="arithmatex">\(\mathrm{C}\)</span> 的左支于 <span class="arithmatex">\(\mathrm{M,N}\)</span> 两点，<span class="arithmatex">\(\mathrm{M}\)</span> 在第二象限，直线 <span class="arithmatex">\(\mathrm{MA_1}\)</span> 与直线 <span class="arithmatex">\(\mathrm{NA_2}\)</span> 交于点 <span class="arithmatex">\(\mathrm{P}\)</span>。证明：点 <span class="arithmatex">\(\mathrm{P}\)</span> 在定直线上。</p>
+</div>
+<p><strong>自极三角形</strong></p>
+<p>对于双曲线上的四边形 <span class="arithmatex">\(\mathrm{M,N,A_1,A_2}\)</span>，对边交点为 <span class="arithmatex">\(\mathrm{T}\)</span>，对角线交点为 <span class="arithmatex">\(\mathrm{P}\)</span>，由自极三角形知 <span class="arithmatex">\(\mathrm{P}\)</span> 在 <span class="arithmatex">\(\mathrm{T}\)</span> 的极线 <span class="arithmatex">\(x=-1\)</span> 上。</p>
+<p><strong>齐次化 + 第三定义</strong></p>
+<p>注意到直线 <span class="arithmatex">\(\mathrm{MN}\)</span> 过定点，由对合变换知直线 <span class="arithmatex">\(\mathrm{MA_2,NA_2}\)</span> 斜率积为定值。证明采用齐次化：</p>
+<p>设 <span class="arithmatex">\(\mathrm{MN}:\ m(x-2)+ny=1\)</span>，代入 <span class="arithmatex">\((-4,0)\)</span> 得 <span class="arithmatex">\(m=-\frac{1}{6}\)</span>，联立得 <span class="arithmatex">\(-\frac{1}{16}\left(\frac{y}{x-2}\right)^2+n\left(\frac{y}{x-2}\right)+\frac{1}{12}=0\)</span>。</p>
+<p>因此 <span class="arithmatex">\(k_{MA_2}\cdot k_{NA_2}=-\frac{4}{3}\)</span>，由双曲线的第三定义知 <span class="arithmatex">\(k_{MA_2}\cdot k_{MA_1}=4\)</span>，故 <span class="arithmatex">\(\frac{k_{A_1P}}{k_{A_2P}}=-3\Rightarrow x_P=-1\)</span>。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2023·北京，19（命题背景：帕斯卡定理 (退化) / 仿射变换, 四点共圆）</p>
+<p>已知椭圆 <span class="arithmatex">\(\mathrm{E}:\ \frac{x^2}{9}+\frac{y^2}{4}=1\)</span>，<span class="arithmatex">\(\mathrm{A,C}\)</span> 分别是 <span class="arithmatex">\(\mathrm{E}\)</span> 的上下顶点，<span class="arithmatex">\(\mathrm{B,D}\)</span> 分别是 <span class="arithmatex">\(\mathrm{E}\)</span> 的左右顶点。</p>
+<p>（2）设 <span class="arithmatex">\(\mathrm{P}\)</span> 为第一象限内 <span class="arithmatex">\(\mathrm{E}\)</span> 上的动点，直线 <span class="arithmatex">\(\mathrm{PD}\)</span> 与直线 <span class="arithmatex">\(\mathrm{BC}\)</span> 交于点 <span class="arithmatex">\(\mathrm{M}\)</span>，直线 <span class="arithmatex">\(\mathrm{PA}\)</span> 与直线 <span class="arithmatex">\(y=-2\)</span> 交于点 <span class="arithmatex">\(\mathrm{N}\)</span>，求证：<span class="arithmatex">\(\mathrm{MN}\parallel \mathrm{CD}\)</span>。</p>
+</div>
+<p><strong>帕斯卡定理（退化）</strong></p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_9.png" alt="图片 mock_9.png" style="width: 50%;">
+</div>
+
+<p>对于 (退化) 六边形 <span class="arithmatex">\(\mathrm{CCDPAB}\)</span> 使用帕斯卡定理，<span class="arithmatex">\(\mathrm{CC}\cap \mathrm{PA}=\mathrm{N},\mathrm{CD}\cap \mathrm{AB}=\mathrm{Q},\mathrm{DP}\cap \mathrm{BC}=\mathrm{M}\)</span>，则 <span class="arithmatex">\(\mathrm{N,Q,M}\)</span> 三点共线。又 <span class="arithmatex">\(\mathrm{Q}\)</span> 是无穷远点，因此 <span class="arithmatex">\(\mathrm{MN}\parallel \mathrm{AB}\parallel \mathrm{CD}\)</span>。</p>
+<p><strong>仿射变换 + 四点共圆</strong></p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_10.png" alt="图片 mock_10.png" style="width: 50%;">
+</div>
+
+<p>考虑将椭圆 <span class="arithmatex">\(\mathrm{E}\)</span> 仿射变换为 <span class="arithmatex">\(\frac{x^2}{4}+\frac{y^2}{4}=1\)</span>，则四边形 <span class="arithmatex">\(\mathrm{ABCD}\)</span> 为正方形。</p>
+<p>由 <span class="arithmatex">\(\mathrm{A,B,D,P}\)</span> 四点共圆知 <span class="arithmatex">\(\angle \mathrm{NPM}=\angle \mathrm{ABD}=45^\circ\)</span>。显然 <span class="arithmatex">\(\angle \mathrm{NCM}=45^\circ\)</span>，因此 <span class="arithmatex">\(\mathrm{P,N,M,C}\)</span> 四点共圆。</p>
+<p>故 <span class="arithmatex">\(\angle \mathrm{NMC}=\angle \mathrm{APC}=90^\circ\)</span>，而 <span class="arithmatex">\(\angle \mathrm{DCB}=90^\circ\)</span>，故 <span class="arithmatex">\(\mathrm{MN}\parallel \mathrm{CD}\)</span>。</p>
+<p><strong>仿射变换的常见性质</strong></p>
+<ul>
+<li>同素性：变换后，点仍是点，线仍是线</li>
+<li>结合性：变换后，在直线上的点仍在直线上</li>
+<li>斜率比不变, 面积比不变</li>
+<li>平行关系不变, 共线线段比例关系不变, 点分线段比不变</li>
+</ul>
+<p><strong>同一法</strong></p>
+<p>朴素做法是设点 <span class="arithmatex">\(\mathrm{P}\ (x_0,y_0)\)</span>，然后表示出点 <span class="arithmatex">\(\mathrm{N,M}\)</span>，进而爆算论证 <span class="arithmatex">\(k_{NM}=\frac{2}{3}\)</span>，但是计算量太大。</p>
+<p>考虑同一法，我们去设点 <span class="arithmatex">\(\mathrm{N}\ (t,-2)\)</span>，然后作 <span class="arithmatex">\(\mathrm{NM'}\parallel \mathrm{CD}\)</span> 交直线 <span class="arithmatex">\(\mathrm{BC}\)</span> 于 <span class="arithmatex">\(\mathrm{M'}\)</span>，如果能说明 <span class="arithmatex">\(\mathrm{P,D,M'}\)</span> 三点共线，则由同一法知成立（因为 <span class="arithmatex">\(\mathrm{BC}\)</span> 与 <span class="arithmatex">\(\mathrm{PD}\)</span> 交点唯一）。</p>
+<p>直线 <span class="arithmatex">\(\mathrm{AN}:\ y=-\frac{4}{t}x+2\)</span>，联立 <span class="arithmatex">\(\mathrm{E}\)</span> 易得 <span class="arithmatex">\(\mathrm{P}\ (\frac{36t}{36+t^2},\frac{2t^2-72}{36+t^2})\)</span>。</p>
+<p>再联立 <span class="arithmatex">\(\begin{cases}\mathrm{BC}:\ y=-\frac{2}{3}x-2 \\ \mathrm{NM'}:\ y=\frac{2}{3}(x-t)-2\end{cases}\)</span>，易得 <span class="arithmatex">\(\mathrm{M'}\ (\frac{t}{2},-\frac{t}{3}-2)\)</span>。</p>
+<p>最后由 <span class="arithmatex">\(\vec{\mathrm{PD}}=(\frac{108+3t^2-36t}{36+t^2},\frac{72-2t^2}{36+t^2})\)</span>，<span class="arithmatex">\(\vec{\mathrm{DM'}}=(\frac{t}{2}-3,-\frac{t}{3})\)</span> 知 <span class="arithmatex">\(\vec{\mathrm{PD}} \parallel \vec{\mathrm{DM'}}\)</span>，故 <span class="arithmatex">\(\mathrm{P,D,M'}\)</span> 三点共线，命题成立。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2022·新高考 II 卷，21（命题背景：渐近线引理，相似）</p>
+<p>已知双曲线 <span class="arithmatex">\(\mathrm{C}:\ x^2-\frac{y^2}{3}=1\)</span>，右焦点为 <span class="arithmatex">\(\mathrm{F}\ (2,0)\)</span>。过 <span class="arithmatex">\(\mathrm{F}\)</span> 的直线与 <span class="arithmatex">\(\mathrm{C}\)</span> 的两条渐近线分别交于 <span class="arithmatex">\(\mathrm{A,B}\)</span> 两点，点 <span class="arithmatex">\(\mathrm{P}\ (x_1,y_1),\ \mathrm{Q}\ (x_2,y_2)\)</span> 在 <span class="arithmatex">\(\mathrm{C}\)</span> 上，且 <span class="arithmatex">\(x_1&gt;x_2&gt;0,\ y_1&gt;0\)</span>。过 <span class="arithmatex">\(\mathrm{P}\)</span> 且斜率为 <span class="arithmatex">\(-\sqrt{3}\)</span> 的直线与过 <span class="arithmatex">\(\mathrm{Q}\)</span> 且斜率为 <span class="arithmatex">\(\sqrt{3}\)</span> 的直线交于点 <span class="arithmatex">\(\mathrm{M}\)</span>，从下面 (1)(2)(3) 中选取两个作为条件，证明另外一个成立。</p>
+<p>(1) <span class="arithmatex">\(\mathrm{M}\)</span> 在 <span class="arithmatex">\(\mathrm{AB}\)</span> 上；(2) <span class="arithmatex">\(\mathrm{PQ}\parallel \mathrm{AB}\)</span>；(3) <span class="arithmatex">\(\mathrm{|MA|=|MB|}\)</span>。</p>
+</div>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_12.png" alt="图片 mock_12.png" style="width: 50%;">
+</div>
+
+<p><strong>渐近线引理 + 相似</strong></p>
+<p>我们考虑一般化的双曲线 <span class="arithmatex">\(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\)</span>。</p>
+<p>由于渐近线方程为 <span class="arithmatex">\(\frac{x^2}{a^2}-\frac{y^2}{b^2}=0\)</span>，它与双曲线方程<strong>仅差在常数项上（核心）</strong>，因此两者间存在大量性质。</p>
+<p>这里大体罗列部分性质（待完善）：</p>
+<ul>
+<li><span class="arithmatex">\(\tau\)</span> 上点 <span class="arithmatex">\(\mathrm{M}\)</span> 分别作两平行线，围成的平行四边形面积为定值</li>
+<li>过点 <span class="arithmatex">\(\mathrm{M}\)</span> 作直线交 <span class="arithmatex">\(\tau\)</span> 于点 <span class="arithmatex">\(\mathrm{A,B}\)</span>，渐近线于点 <span class="arithmatex">\(\mathrm{C,D}\)</span>，则 <span class="arithmatex">\(\mathrm{|AC|}=\mathrm{|BD|}\)</span></li>
+</ul>
+<p>在本题要用到的性质是：<span class="arithmatex">\(\mathrm{PQ}\parallel \mathrm{CD}\)</span>。</p>
+<p>证明采用曲线系：设点 <span class="arithmatex">\(\mathrm{M}\ (x_0,y_0)\)</span>，则双曲线 <span class="arithmatex">\(\mathrm{C}:\ \frac{x^2}{a^2}-\frac{y^2}{b^2}=1\)</span>，渐近线 <span class="arithmatex">\(\mathrm{l_1}:\ \frac{x^2}{a^2}-\frac{y^2}{b^2}=0\)</span>，过 <span class="arithmatex">\(\mathrm{M}\)</span> 的两条线 <span class="arithmatex">\(\mathrm{l_2}:\ \frac{(x-x_0)^2}{a^2}-\frac{(y-y_0)^2}{b^2}=0\)</span>。</p>
+<p>直线 <span class="arithmatex">\(\mathrm{PQ}:\ \frac{2x_0x}{a^2}-\frac{x_0^2}{a^2}-\frac{2y_0y}{b^2}+\frac{y_0^2}{b^2}=1\)</span>，直线 <span class="arithmatex">\(\mathrm{CD}:\ \frac{2x_0x}{a^2}-\frac{x_0^2}{a^2}-\frac{2y_0y}{b^2}+\frac{y_0^2}{b^2}=0\)</span>，显然斜率相等。</p>
+<p><strong>(1)(2) ⇒ (3)</strong>：显然 <span class="arithmatex">\(\triangle \mathrm{OCD}\sim \mathrm{OAB}\)</span>，设 <span class="arithmatex">\(\frac{|OD|}{|OB|}=\frac{|OC|}{|OA|}=\lambda\)</span>，则 <span class="arithmatex">\(\frac{|AM|}{|AB|}=\frac{|BM|}{|AB|}=1-\lambda\)</span>，因此 <span class="arithmatex">\(2(1-\lambda)=1\Rightarrow \lambda=\frac 12\)</span>，故 <span class="arithmatex">\(\mathrm{|MA|=|MB|}\)</span>。</p>
+<p><strong>(1)(3) ⇒ (2)</strong>：由 <span class="arithmatex">\(\triangle \mathrm{ACM}\sim \triangle \mathrm{AOB}\)</span> 知 <span class="arithmatex">\(\mathrm{|OD|}=\frac{1}{2}\mathrm{|OB|}\)</span>，同理 <span class="arithmatex">\(\mathrm{|OC|}=\frac{1}{2}\mathrm{|OA|}\)</span>，因此 <span class="arithmatex">\(\mathrm{PQ}\parallel \mathrm{AB}\)</span>。</p>
+<p><strong>(2)(3) ⇒ (1)</strong>：同一法易证（证 <span class="arithmatex">\(\mathrm{AB}\)</span> 中点 <span class="arithmatex">\(\mathrm{M'}\)</span> 符合条件，而平行线交点唯一），其他过程与前面类似。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2022·浙江卷，21（命题背景：对合变换）</p>
+<p>已知椭圆 <span class="arithmatex">\(\tau: \frac{x^2}{12}+y^2=1\)</span>，设 <span class="arithmatex">\(\mathrm{A,B}\)</span> 是椭圆上异于 <span class="arithmatex">\(\mathrm{P}\ (0,1)\)</span> 的两点，且点 <span class="arithmatex">\(\mathrm{Q}\ (0,\frac 12)\)</span> 在线段 <span class="arithmatex">\(\mathrm{AB}\)</span> 上，直线 <span class="arithmatex">\(\mathrm{PA,PB}\)</span> 分别交直线 <span class="arithmatex">\(y=-\frac 12 x+3\)</span> 于 <span class="arithmatex">\(\mathrm{C,D}\)</span> 两点。</p>
+<p>（2）求 <span class="arithmatex">\(|\mathrm{CD}|\)</span> 的最小值。</p>
+</div>
+<p><strong>齐次化 + 参数方程</strong></p>
+<p>注意到直线 <span class="arithmatex">\(\mathrm{AB}\)</span> 过定点，由对合变换知<strong>直线 <span class="arithmatex">\(\mathrm{PA,PB}\)</span> 斜率积为定值</strong>。证明采用齐次化：</p>
+<p>设 <span class="arithmatex">\(\mathrm{AB}:\ mx+n(y-1)=1\)</span>，代入 <span class="arithmatex">\(\mathrm{Q}\ (0,\frac{1}{2})\)</span> 得 <span class="arithmatex">\(n=-2\)</span>，联立 <span class="arithmatex">\(\tau\)</span> 得 <span class="arithmatex">\(-3\left(\frac{y-1}{x}\right)^2+2m\left(\frac{y-1}{x}\right)+\frac{1}{12}=0\)</span>，因此 <span class="arithmatex">\(k_{PA}\cdot k_{PB}=-\frac{1}{36}\)</span>。</p>
+<p>这之后要求的东西就跟椭圆无关了，问的是长度，因此宜用参数方程，设 <span class="arithmatex">\(\mathrm{CD}: \begin{cases}x=\frac{2}{\sqrt{5}}t \\ y=3-\frac{1}{\sqrt{5}} t\end{cases}\)</span></p>
+<p>则 <span class="arithmatex">\(k_{PA}\cdot k_{PB}=\left(\frac{2\sqrt{5}-t_1}{2t_1}\right)\cdot \left(\frac{2\sqrt{5}-t_2}{2t_2}\right)\)</span>，化简得 <span class="arithmatex">\(t_1t_2=\frac{9\sqrt{5}}{5}(t_1+t_2)-18\)</span>，于是：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+|\mathrm{CD}|&amp;=|t_1-t_2|\\
+&amp;=\sqrt{(t_1+t_2)^2-4t_1t_2}\\
+&amp;=\sqrt{(t_1+t_2)^2-\frac{36\sqrt{5}}{5}(t_1+t_2)+72}\ge \frac{6\sqrt{5}}{5}
+\end{aligned}
+\]</div>
+<p>在 <span class="arithmatex">\(t_1+t_2=\frac{18\sqrt{5}}{5}\)</span> 时取等。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2022·浙江，21（命题背景：极点极线）</p>
+<p>已知椭圆 <span class="arithmatex">\(\frac{x^2}{8}+\frac{y^2}{4}=1\)</span>，左右焦点分别为 <span class="arithmatex">\(\mathrm{F_1,F_2}\)</span>，<span class="arithmatex">\(\mathrm{A,B}\)</span> 是椭圆上两点，<span class="arithmatex">\(\mathrm{F_1}\)</span> 是 <span class="arithmatex">\(\triangle \mathrm{ABF_2}\)</span> 的重心。</p>
+<p>（2）设 <span class="arithmatex">\(\mathrm{C,D}\)</span> 是椭圆上两点，<span class="arithmatex">\(\mathrm{F_1}\)</span> 在直线 <span class="arithmatex">\(\mathrm{CD}\)</span> 上的投影为 <span class="arithmatex">\(\mathrm{P}\)</span>，证明：<span class="arithmatex">\(|PC|\cdot |PD|\)</span> 为定值。</p>
+</div>
+<p><strong>极点极线</strong></p>
+<p>由 <span class="arithmatex">\(\mathrm{F_1}\)</span> 关于椭圆的极线为 <span class="arithmatex">\(x=-2\)</span> 知，<span class="arithmatex">\(\mathrm{P}\)</span> 在 <span class="arithmatex">\(x=-2\)</span> 上。</p>
+<p>设 <span class="arithmatex">\(\mathrm{P}\ (-2,t)\)</span>，则 <span class="arithmatex">\(\mathrm{CD}:\ y=\frac{1}{t}(x+2)+t\)</span>，联立椭圆得 <span class="arithmatex">\((t^2+2)y^2-2t^3y-4t^2-8=0\)</span>。</p>
+<p>因此 <span class="arithmatex">\(|PC|\cdot |PD|=\sqrt{1+t^2}|y_C-y_D|=\sqrt{1+t^2}\cdot \frac{4\sqrt{2(t^2+1)(t^2+2)}}{t^2+2}=4\sqrt{2}\)</span>。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2021·全国甲卷，20（命题背景：彭赛列闭合定理）</p>
+<p>抛物线 <span class="arithmatex">\(\mathrm{C}:\ y^2=x\)</span>，圆 <span class="arithmatex">\(\mathrm{M}:\ (x-2)^2+y^2=1\)</span>。</p>
+<p>（2）设 <span class="arithmatex">\(\mathrm{A_1,A_2,A_3}\)</span> 是 <span class="arithmatex">\(\mathrm{C}\)</span> 上的三个点，直线 <span class="arithmatex">\(\mathrm{A_1A_2,A_1A_3}\)</span> 均与 <span class="arithmatex">\(\mathrm{M}\)</span> 相切，判断 <span class="arithmatex">\(\mathrm{A_2A_3}\)</span> 与 <span class="arithmatex">\(\mathrm{M}\)</span> 的位置关系，并说明理由。</p>
+</div>
+<p><strong>设点法</strong></p>
+<p>抛物线上有天然的优美"斜率"形式，我们好好利用它。设三个点的坐标为 <span class="arithmatex">\((x_i,y_i)\ (i=1,2,3)\)</span>。</p>
+<p>则直线 <span class="arithmatex">\(\mathrm{AB}:\ (y_1+y_2)y-x-y_1y_2=0\)</span>，与 <span class="arithmatex">\(\mathrm{M}\)</span> 的距离为 <span class="arithmatex">\(\frac{|2+y_1y_2|}{\sqrt{1+(y_1+y_2)^2}}=1\)</span>。</p>
+<p>同理解得 <span class="arithmatex">\(\begin{cases}(2+y_1y_2)^2=1+(y_1+y_2)^2 \\ (2+y_1y_3)^2=1+(y_1+y_3)^2\end{cases}\)</span>，我们只需要证 <span class="arithmatex">\((2+y_2y_3)^2=1+(y_2+y_3)^2\)</span>。</p>
+<p>由同构知 <span class="arithmatex">\(y_2,y_3\)</span> 为 <span class="arithmatex">\((y_1^2-1)t^2+2y_1 t+3-y_1^2=0\)</span> 的两根，因此 <span class="arithmatex">\(\begin{cases}y_2+y_3=\frac{2y_1}{1-y_1^2} \\ y_2y_3=\frac{y_1^2-3}{1-y_1^2}\end{cases}\)</span>。</p>
+<p>回代易知 <span class="arithmatex">\(\begin{cases}(2+y_2y_3)^2= \left(\frac {1+y_1^2}{1-y_1^2}\right)^2\\ 1+(y_2+y_3)^2=\left(\frac {1+y_1^2}{1-y_1^2}\right)^2\end{cases}\)</span>，因此 <span class="arithmatex">\(\mathrm{A_2A_3}\)</span> 与 <span class="arithmatex">\(\mathrm{M}\)</span> 相切。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2021·新高考 I 卷，21（命题背景：圆锥曲线上的四点共圆）</p>
+<p>已知曲线 <span class="arithmatex">\(\tau: x^2-\frac{y^2}{16}=1\)</span>。设点 <span class="arithmatex">\(\mathrm{T}\)</span> 在直线 <span class="arithmatex">\(x=\frac 12\)</span> 上，过 <span class="arithmatex">\(\mathrm{T}\)</span> 的两条直线分别交 <span class="arithmatex">\(\mathrm{C}\)</span> 于点 <span class="arithmatex">\(\mathrm{A,B}\)</span> 两点和 <span class="arithmatex">\(\mathrm{P,Q}\)</span> 两点，且 <span class="arithmatex">\(\mathrm{|TA|\cdot |TB|=|TP|\cdot |TQ|}\)</span>，求 <span class="arithmatex">\(k_{AB}+k_{PQ}\)</span>。</p>
+</div>
+<p>显然它等价于 <span class="arithmatex">\(\mathrm{A,B,P,Q}\)</span> 四点共圆，结论是：<strong>圆锥曲线上四点共圆，则对边的倾斜角互补。</strong></p>
+<p><strong>方法一：曲线系（有扣分风险）</strong></p>
+<p>设直线 <span class="arithmatex">\(\mathrm{AB}:\ y=k_1(x-\frac{1}{2})+m\)</span>，直线 <span class="arithmatex">\(\mathrm{PQ}:\ y=k_2(x-\frac{1}{2})+m\)</span>。于是过 <span class="arithmatex">\(\mathrm{A,B,P,Q}\)</span> 四点的圆方程为：</p>
+<div class="arithmatex">\[
+\left(y-k_1x+\frac{k_1}{2}-m\right)\left(y-k_2x+\frac{k_2}{2}-m\right)=0
+\]</div>
+<p>由于圆方程的形式为 <span class="arithmatex">\(Ax^2+By^2+Dx+Ey+F=0\ (A=B)\)</span>，故 <span class="arithmatex">\(xy\)</span> 项前系数为 <span class="arithmatex">\(0\)</span>，即 <span class="arithmatex">\(k_1+k_2=0\)</span>。</p>
+<p><strong>备注</strong> 用曲线系，不仅可以判定四点是否共圆，还可以顺带求出圆方程。</p>
+<p><strong>方法二：参数方程</strong></p>
+<p>设 <span class="arithmatex">\(\mathrm{T}(\frac{1}{2},t)\)</span>，直线 <span class="arithmatex">\(\mathrm{AB}\)</span> 的参数方程为 <span class="arithmatex">\(\begin{cases} x=\frac{1}{2}+l\cos \alpha \\ y=t+l\sin \alpha\end{cases}\)</span>，直线 <span class="arithmatex">\(\mathrm{PQ}\)</span> 的参数方程为 <span class="arithmatex">\(\begin{cases} x=\frac{1}{2}+l\cos \beta \\ y=t+l\sin \beta\end{cases}\)</span>。</p>
+<p>联立 <span class="arithmatex">\(\mathrm{AB}\)</span> 与 <span class="arithmatex">\(\tau\)</span> 得</p>
+<div class="arithmatex">\[
+(16\cos^2\alpha-\sin^2\alpha)l^2+(16\cos \alpha-2t\sin\alpha)l-t^2-12=0
+\]</div>
+<p>因此 <span class="arithmatex">\(\mathrm{|TA|\cdot |TB|}=|l_1l_2|=\frac{-t^2-12}{16\cos^2\alpha-\sin^2\alpha}\)</span>，同理知 <span class="arithmatex">\(\mathrm{|TP|\cdot |TQ|}=|l_3l_4|=\frac{-t^2-12}{16\cos^2\beta-\sin^2\beta}\)</span>。</p>
+<p>由 <span class="arithmatex">\(\mathrm{|TA|\cdot |TB|=|TP|\cdot |TQ|}\)</span> 知 <span class="arithmatex">\(\sin\alpha=\sin \beta\)</span>，因此 <span class="arithmatex">\(\alpha+\beta=\pi\)</span> 或 <span class="arithmatex">\(\alpha=\beta\)</span>（舍）。</p>
+<p>因此 <span class="arithmatex">\(k_1+k_2=0\)</span>。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2021·浙江卷，21</p>
+<p>已知 <span class="arithmatex">\(\mathrm{F}\ (1,0)\)</span> 是抛物线 <span class="arithmatex">\(y^2=4x\)</span> 的焦点，<span class="arithmatex">\(\mathrm{M}\ (-1,0)\)</span> 在准线上。</p>
+<p>（2）设过点 <span class="arithmatex">\(\mathrm{F}\)</span> 的直线交抛物线于 <span class="arithmatex">\(\mathrm{A,B}\)</span> 两点，斜率为 <span class="arithmatex">\(2\)</span> 的直线 <span class="arithmatex">\(l\)</span> 与直线 <span class="arithmatex">\(\mathrm{MA,MB,AB,x}\)</span> 轴依次交于点 <span class="arithmatex">\(\mathrm{P,Q,R,N}\)</span>，且 <span class="arithmatex">\(\mathrm{|RN|^2=|PN|\cdot |QN|}\)</span>，求直线 <span class="arithmatex">\(l\)</span> 在 <span class="arithmatex">\(x\)</span> 轴上截距的范围。</p>
+</div>
+<p><strong>广泛设线，巧妙韦达转化</strong></p>
+<p>我们一次性把每条直线都表示出来：<span class="arithmatex">\(\begin{cases}\mathrm{AB}:\ x=my+1 \\ \mathrm{l}:\ x=\frac{1}{2}y+t \\ \mathrm{MA,MB}:\ x=ny-1\end{cases}\)</span>。</p>
+<p>容易口算出 <span class="arithmatex">\(y_P=\frac{t+1}{n_1-\frac 12}\)</span>，<span class="arithmatex">\(y_Q=\frac{t+1}{n_2-\frac 12}\)</span>，<span class="arithmatex">\(y_R=\frac{t-1}{m-\frac 12}\)</span>。</p>
+<p>接下来一步很重要，就是注意到 <span class="arithmatex">\(\mathrm{A,B}\)</span> 是在抛物线上的，通过联立直线 <span class="arithmatex">\(\mathrm{MA,AB}\)</span>，我们可以解出 <span class="arithmatex">\(\mathrm{A}\ (\frac{n_1+m}{n_1-m},\frac{2}{n_1-m})\)</span>，代入抛物线方程得 <span class="arithmatex">\(n^2-m^2-1=0\)</span>，因此 <span class="arithmatex">\(\begin{cases}n_1+n_2=0\\ n_1\cdot n_2=-m^2-1\end{cases}\)</span>。</p>
+<p>回到题目，我们化简 <span class="arithmatex">\(\mathrm{|RN|^2=|PN|\cdot |QN|}\)</span> <span class="arithmatex">\(\iff \left(\frac{t-1}{m-\frac 12}\right)^2=\frac{-(t+1)^2}{(n_1-\frac 12)(n_2-\frac 12)}=\frac{(t+1)^2}{m^2+\frac 34}\)</span>。</p>
+<p>我们惊喜的发现了什么？对，<span class="arithmatex">\(t\)</span> 跟 <span class="arithmatex">\(m\)</span> 可以分离开了！这样我们可以进行单变量转换（设 <span class="arithmatex">\(p=m-\frac 12\)</span> 换元）：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\left(\frac{t+1}{t-1}\right)^2&amp;=\frac{m^2+\frac 34}{(m-\frac 12)^2}\\
+&amp;=\frac{(p+\frac 12)^2+\frac 34}{p^2}\\
+&amp;=1+\frac{1}{p}+\frac{1}{p^2}\ge \frac 34
+\end{aligned}
+\]</div>
+<p>接下来就是分类讨论。</p>
+<p><span class="arithmatex">\(\circ\)</span> 若 <span class="arithmatex">\(\frac{t+1}{t-1}\ge \frac{\sqrt{3}}{2}\)</span>，易得 <span class="arithmatex">\(t&gt;1\)</span> 或 <span class="arithmatex">\(t\le -4\sqrt{3}-7\)</span>；</p>
+<p><span class="arithmatex">\(\circ\)</span> 若 <span class="arithmatex">\(\frac{t+1}{t-1}\le -\frac{\sqrt{3}}{2}\)</span>，易得 <span class="arithmatex">\(4\sqrt{3}-7\le t&lt;1\)</span>。</p>
+<p><span class="arithmatex">\(l\)</span> 与 <span class="arithmatex">\(x\)</span> 轴的截距即为 <span class="arithmatex">\(t\)</span>，因此截距 <span class="arithmatex">\(t\in (-\infty,-4\sqrt{3}-7]\cup [4\sqrt{3}-7,1)\cup (1,+\infty)\)</span>。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2020·浙江卷，21</p>
+<p>已知椭圆 <span class="arithmatex">\(\mathrm{C_1}:\ \frac{x^2}{2}+y^2=1\)</span>，抛物线 <span class="arithmatex">\(\mathrm{C_2}:\ y^2=2px\ (p&gt;0)\)</span>，点 <span class="arithmatex">\(\mathrm{A}\)</span> 是椭圆 <span class="arithmatex">\(\mathrm{C_1}\)</span> 与抛物线 <span class="arithmatex">\(\mathrm{C_2}\)</span> 的交点，过点 <span class="arithmatex">\(\mathrm{A}\)</span> 的直线 <span class="arithmatex">\(l\)</span> 交椭圆 <span class="arithmatex">\(\mathrm{C_1}\)</span> 于点 <span class="arithmatex">\(\mathrm{B}\)</span>，交抛物线 <span class="arithmatex">\(\mathrm{C_2}\)</span> 于点 <span class="arithmatex">\(\mathrm{M}\)</span>。</p>
+<p>（2）若存在不过原点的直线 <span class="arithmatex">\(l\)</span>，使得 <span class="arithmatex">\(\mathrm{M}\)</span> 为线段 <span class="arithmatex">\(\mathrm{AB}\)</span> 的中点，求 <span class="arithmatex">\(p\)</span> 的最大值。</p>
+</div>
+<p><strong>方法一：设点法（精彩）</strong></p>
+<p>设点 <span class="arithmatex">\(\mathrm{A}\ (2pa^2,2pa),\mathrm{M}\ (2pb^2,2pb)\)</span>，则 <span class="arithmatex">\(\mathrm{B}\ (4pb^2-2pa^2,4pb-2pa)\)</span>。</p>
+<p>将 <span class="arithmatex">\(\mathrm{A,M}\)</span> 代入椭圆方程得 <span class="arithmatex">\(\begin{cases} \frac{(2pa^2)^2}{2}+(2pa)^2=1 \\ \frac{(4pb ^2-2pa^2)^2}{2}+(4pb-2pa)^2=1\end{cases}\)</span>，下式减上式化简得 <span class="arithmatex">\(\begin{cases}p^2=\frac{1}{2(a^4+2a^2)} \\ b^2+ab+2=0\end{cases}\)</span>。</p>
+<p>只需要 <span class="arithmatex">\(\Delta=a^2-8\ge 0\Rightarrow a\ge 2\sqrt{2}\)</span>，故 <span class="arithmatex">\(p^2\le \frac{1}{160}\Rightarrow p\le \frac{\sqrt{10}}{40}\)</span>。</p>
+<p><strong>方法二：设点法 + 中点弦</strong></p>
+<p>在椭圆里，<span class="arithmatex">\(\mathrm{M}\)</span> 为线段 <span class="arithmatex">\(\mathrm{AB}\)</span> 的中点<strong>等价于</strong> <span class="arithmatex">\(k_{OM}\cdot k_{AB}=-\frac{1}{2}\)</span>，即 <span class="arithmatex">\(\frac{1}{b(a+b)}=-\frac{1}{2}\Rightarrow b^2+ab+2=0\)</span>。</p>
+<hr />
+<h2 id="_3">模拟卷好题记录<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<div class="admonition problem">
+<p class="admonition-title">2023.02 温州返校，8（新视角：变换参照系）</p>
+<p>直线 <span class="arithmatex">\(l\)</span> 与双曲线 <span class="arithmatex">\(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\ (a&gt;0,b&gt;0)\)</span> 的左、右两支分别交于点 <span class="arithmatex">\(A,B\)</span>，与双曲线的两条渐近线分别交于点 <span class="arithmatex">\(C,D\)</span>（<span class="arithmatex">\(A,C,D,B\)</span> 从左到右依次排列），若 <span class="arithmatex">\(OA\bot OB\)</span>，且 <span class="arithmatex">\(|AC|,|CD|,|BD|\)</span> 成等差数列，则双曲线的离心率的取值范围是（　　）</p>
+<p>A. <span class="arithmatex">\([\frac{\sqrt{10}}{2},+\infty)\)</span></p>
+<p>B. <span class="arithmatex">\([2\sqrt{2},\sqrt{10}]\)</span></p>
+<p>C. <span class="arithmatex">\([\frac{\sqrt{10}}{2},2\sqrt{3}]\)</span></p>
+<p>D. <span class="arithmatex">\([\sqrt{10},+\infty)\)</span></p>
+</div>
+<p><strong>解答</strong></p>
+<p><span class="arithmatex">\(\triangleright^{[1]}\)</span> 在双曲线中有结论 <span class="arithmatex">\(|AC|=|BD|\)</span>，因此 <span class="arithmatex">\(2|CD|=|AC|+|BD|=2|AC|\Rightarrow |AC|=|CD|=|BD|\)</span>。</p>
+<p><span class="arithmatex">\(\triangleright^{[2]}\)</span> 我们换个角度，固定 <span class="arithmatex">\(A,C,D,B\)</span>，去求能容纳它的双曲线。</p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_1.png" alt="图片 mock_1.png" style="width: 50%;">
+</div>
+
+<p>设 <span class="arithmatex">\(CD\)</span> 中点为 <span class="arithmatex">\(E\)</span>，渐近线与 <span class="arithmatex">\(x\)</span> 轴的夹角为 <span class="arithmatex">\(\alpha\)</span>，<span class="arithmatex">\(\angle COD=\beta\)</span>（<span class="arithmatex">\(2\alpha+\beta=\pi\)</span>），则 <span class="arithmatex">\(O\)</span> 在以 <span class="arithmatex">\(AB\)</span> 为直径的圆上。</p>
+<p>我们剥离双曲线，单看 <span class="arithmatex">\(A,C,D,B\)</span> 这个结构：</p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_2.png" alt="图片 mock_2.png" style="width: 50%;">
+</div>
+
+<p>点 <span class="arithmatex">\(F\)</span> 满足 <span class="arithmatex">\(EF\bot AB\)</span>，由圆外角 <span class="arithmatex">\(&lt;\)</span> 圆周角知 <span class="arithmatex">\(\beta\le \theta&lt; \frac{\pi}{2}\)</span>，因此：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;&amp;\pi-2\alpha&amp;\le \theta\\
+&amp;\Rightarrow&amp;\frac{\pi}{2}-\frac{\theta}{2}&amp;\le \alpha\\
+&amp;\Rightarrow&amp;3=\cot \frac{\theta}{2}&amp;\le \tan \alpha
+\end{aligned}
+\]</div>
+<p>回到双曲线本身，<span class="arithmatex">\(\tan\alpha=\frac{b}{a}\ge 3\Rightarrow e\in [\sqrt{10},+\infty)\)</span>，选 <span class="arithmatex">\(\boxed{\mathrm{D}}\)</span>。</p>
+<p><strong>反思</strong></p>
+<p><span class="arithmatex">\([1]\)</span> 双曲线与其渐近线间有许多优美的性质，本质在于它们的方程为 <span class="arithmatex">\(\frac{x^2}{a^2}-\frac{y^2}{b^2}=0/1\)</span>，只有常数项不同，故不影响 <span class="arithmatex">\(x_1+x_2\)</span> 的值。下面这些结论定性记忆，考场代特殊位置还原具体数值即可。</p>
+<p>设 <span class="arithmatex">\(P\)</span> 在双曲线 <span class="arithmatex">\(C\)</span> 上，则</p>
+<ul>
+<li><span class="arithmatex">\(P\)</span> 到两渐近线距离之积为定值 <span class="arithmatex">\(\frac{a^2b^2}{c^2}\)</span>；</li>
+<li>过 <span class="arithmatex">\(P\)</span> 作两渐近线的平行线，与两渐近线围成的平行四边形面积为定值 <span class="arithmatex">\(\frac{ab}{2}\)</span>；</li>
+<li>过 <span class="arithmatex">\(P\)</span> 作 <span class="arithmatex">\(C\)</span> 的切线，则 <span class="arithmatex">\(P\)</span> 为所截线段中点；</li>
+<li>过 <span class="arithmatex">\(P\)</span> 作 <span class="arithmatex">\(C\)</span> 的切线，与渐近线围成的三角形面积为定值 <span class="arithmatex">\(ab\)</span>。</li>
+</ul>
+<p><span class="arithmatex">\([2]\)</span> 遇到圆锥曲线的题，我们似乎很容易局限于"以圆锥曲线为母体"的思维定势中，但这不是绝对的。像此题，固定这条直线，去求符合要求的双曲线的 <span class="arithmatex">\(\alpha\)</span> 限制，会更加便捷。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2023.02 LHB，2（新视角：光学性质，圆）</p>
+<p>已知 <span class="arithmatex">\(F_1,F_2\)</span> 是椭圆 <span class="arithmatex">\(\frac{x^2}{9}+\frac{y^2}{5}=1\)</span> 的左右焦点，若直线 <span class="arithmatex">\(l\)</span> 是椭圆的一条切线，若点 <span class="arithmatex">\(F_1,F_2\)</span> 到直线 <span class="arithmatex">\(l\)</span> 的距离分别为 <span class="arithmatex">\(d_1,d_2\)</span>，则有（　　）</p>
+<p>A. <span class="arithmatex">\(d_1+d_2=9\)</span></p>
+<p>B. <span class="arithmatex">\(d_1d_2=5\)</span></p>
+<p>C. <span class="arithmatex">\(2\sqrt{5}\le d_1+d_2\le 6\)</span></p>
+<p>D. <span class="arithmatex">\(\frac{1}{5}\le \frac{d_1}{d_2}\le 5\)</span></p>
+</div>
+<p><strong>解答</strong></p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_3.png" alt="图片 mock_3.png" style="width: 50%;">
+</div>
+
+<p>作 <span class="arithmatex">\(F_1\)</span> 关于切线的对称点 <span class="arithmatex">\(F_1'\)</span>，由椭圆的光学性质知 <span class="arithmatex">\(F_1',A,F_2\)</span> 三点共线。</p>
+<p>由椭圆的第一性质知 <span class="arithmatex">\(|F_1'F_2|=2a\)</span>，由 <span class="arithmatex">\(|CO|\)</span> 是 <span class="arithmatex">\(\triangle \mathrm{F_1F_1'F_2}\)</span> 的中位线 <span class="arithmatex">\(\Rightarrow |CO|=a\)</span>。因此 <span class="arithmatex">\(C,D\)</span> 在以 <span class="arithmatex">\(O\)</span> 为圆心，半径为 <span class="arithmatex">\(a\)</span> 的圆上。</p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_4.png" alt="图片 mock_4.png" style="width: 50%;">
+</div>
+
+<p>我们将不必要的线条抹去，延长 <span class="arithmatex">\(CF_1\)</span> 至 <span class="arithmatex">\(E\)</span>，由于 <span class="arithmatex">\(CF_1\parallel DF_2\)</span>，由对称性知 <span class="arithmatex">\(|F_1E|=|DF_2|\)</span>。</p>
+<p>由相交弦定理知 <span class="arithmatex">\(d_1d_2=|F_1P||F_1Q|=(a-c)(a+c)=5\)</span>，因此 <span class="arithmatex">\(B\)</span> 正确。</p>
+<p>又 <span class="arithmatex">\(|CF_1|\ge |CO|-|OF_1|=1\)</span>，因此 <span class="arithmatex">\(d_1+d_2\in [2\sqrt{5},6]\)</span>，<span class="arithmatex">\(\frac{d_1}{d_2}\in [\frac{1}{5},5]\)</span>，因此 <span class="arithmatex">\(CD\)</span> 正确。</p>
+<p>综上，选 <span class="arithmatex">\(\boxed{\mathrm{BCD}}\)</span>。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2023.02 G12 名校协作体，22（新视角：焦半径单刀直入）</p>
+<p>已知椭圆 <span class="arithmatex">\(C:\frac{x^2}{4}+\frac{y^2}{3}=1\)</span>，<span class="arithmatex">\(F_1,F_2\)</span> 为椭圆 <span class="arithmatex">\(C\)</span> 的左右焦点，<span class="arithmatex">\(Q(x_0,y_0)\)</span> 为平面内一个动点，其中 <span class="arithmatex">\(y_0&gt;0\)</span>，记直线 <span class="arithmatex">\(QF_1\)</span> 与椭圆 <span class="arithmatex">\(C\)</span> 在 <span class="arithmatex">\(x\)</span> 轴上方的交点为 <span class="arithmatex">\(A(x_1,y_1)\)</span>，直线 <span class="arithmatex">\(QF_2\)</span> 与椭圆 <span class="arithmatex">\(C\)</span> 在 <span class="arithmatex">\(x\)</span> 轴上方的交点为 <span class="arithmatex">\(B(x_2,y_2)\)</span>。</p>
+<p>若 <span class="arithmatex">\(|QF_1|+|QF_2|=3\)</span>，探究 <span class="arithmatex">\(y_0,y_1,y_2\)</span> 之间关系。</p>
+</div>
+<p><strong>方法一：角度式焦半径 + 新椭圆</strong></p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_5.png" alt="图片 mock_5.png" style="width: 50%;">
+</div>
+
+<p>显然 <span class="arithmatex">\(\mathrm{Q}\)</span> 在 <span class="arithmatex">\(\frac{x^2}{\frac{9}{4}}+\frac{y^2}{\frac{5}{4}}=1\)</span> 上，两椭圆共焦点，用角度式焦半径。</p>
+<p>设 <span class="arithmatex">\(\angle \mathrm{AF_1F_2}=\alpha,\angle \mathrm{BF_2F_1}=\theta\)</span>，则 <span class="arithmatex">\(\begin{cases}
+|QF_1|= \frac{\frac 54}{\frac 32-\cos \alpha}\\
+|AF_1|= \frac{3}{2-\cos \alpha}\\
+|QF_2|= \frac{\frac 54}{\frac 32-\cos \theta}\\
+|BF_2|= \frac{3}{2-\cos \theta}\\
+\end{cases}\)</span>。</p>
+<p>由于 <span class="arithmatex">\(|QF_1|+|QF_2|=3\)</span>，故</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\frac{y_0}{y_1}+\frac{y_0}{y_2}&amp;=\frac{|QF_1|}{|AF_1|}+\frac{|QF_2|}{|BF_2|}\\
+&amp;=\frac{5}{12}\left(\frac{2-\cos \alpha}{\frac 32-\cos \alpha}+\frac{2-\cos \theta}{\frac 32-\cos \theta}\right) \\
+&amp;=\frac{5}{12}\left(2+\frac{\frac 12}{\frac 32-\cos \alpha}+\frac{\frac 12}{\frac 32-\cos \theta}\right)\\
+&amp;=\frac{4}{3}
+\end{aligned}
+\]</div>
+<p>因此 <span class="arithmatex">\(\boxed{\frac{1}{y_1}+\frac{1}{y_2}=\frac{4}{3}\cdot \frac{1}{y_0}}\)</span>。</p>
+<p><strong>方法二：焦半径</strong></p>
+<p>由焦半径知 <span class="arithmatex">\(\begin{cases}|F_1A|=2+\frac{x_1}{2} \\ |F_2B|=2-\frac{x_2}{2}\end{cases}\)</span>，因此 <span class="arithmatex">\(\begin{cases}|F_1Q|=\frac{y_0}{y_1}(2+\frac{x_1}{2}) \\ |F_2Q|=\frac{y_0}{y_2}(2-\frac{x_2}{2})\end{cases}\)</span>。</p>
+<p>注意到</p>
+<div class="arithmatex">\[
+\begin{aligned}
+|F_1Q|+|F_2Q|&amp;=\frac{y_0}{y_1}(2+\frac{\frac{y_1}{y_0}(x_0+1)-1}{2})+\frac{y_0}{y_2}(2-\frac{\frac{y_2}{y_0}(x_0-1)+1}{2})\\
+&amp;=\frac{3}{2}\left(\frac{y_0}{y_1}+\frac{y_0}{y_2}\right)+1
+\end{aligned}
+\]</div>
+<p>因此 <span class="arithmatex">\(\frac{y_0}{y_1}+\frac{y_0}{y_2}=\frac{4}{3}\Rightarrow \boxed{\frac{1}{y_1}+\frac{1}{y_2}=\frac{4}{3}\cdot \frac{1}{y_0}}\)</span>。</p>
+<p><strong>反思</strong></p>
+<p><span class="arithmatex">\([1]\)</span> 一开始我只想到角度式焦半径的做法，可能是思路被"新椭圆"框死了。清醒时回头一想，发现直接焦半径就可以秒杀，非常精彩！</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2023.02 浙南七彩，21（高观点：第二定义，相似）</p>
+<p>已知点 <span class="arithmatex">\(\mathrm{F}\)</span> 为双曲线 <span class="arithmatex">\(\tau:\frac{x^2}{4}-\frac{y^2}{12}=1\)</span> 的右焦点，过 <span class="arithmatex">\(\mathrm{F}\)</span> 的任一直线 <span class="arithmatex">\(l\)</span> 交 <span class="arithmatex">\(\tau\)</span> 于 <span class="arithmatex">\(\mathrm{A,B}\)</span> 两点，直线 <span class="arithmatex">\(l_1:x=1\)</span>。</p>
+<p>（2）若 <span class="arithmatex">\(\mathrm{M}(-4,6)\)</span> 为曲线 <span class="arithmatex">\(\tau\)</span> 上一点，直线 <span class="arithmatex">\(\mathrm{MA,MB}\)</span> 分别与直线 <span class="arithmatex">\(l_1\)</span> 交于 <span class="arithmatex">\(\mathrm{D,E}\)</span> 两点，问以线段 <span class="arithmatex">\(\mathrm{DE}\)</span> 为直径的圆是否过定点？若是，求出定点坐标；若不是，请说明理由。</p>
+</div>
+<p><strong>溯源：第二定义+相似</strong></p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_6.png" alt="图片 mock_6.png" style="width: 50%;">
+</div>
+
+<p><span class="arithmatex">\(\triangleright^{[1]}\)</span> 对于任意在 <span class="arithmatex">\(\tau\)</span> 上的点 <span class="arithmatex">\(\mathrm{M}\)</span>，均满足 <span class="arithmatex">\(FD\bot FE\)</span>。</p>
+<p>直线 <span class="arithmatex">\(l_1\)</span> 是双曲线的右准线，由双曲线的第二定义，<span class="arithmatex">\(\mathrm{\frac{|MF|}{|MH|}=\frac{|AF|}{|AG|}=e\Rightarrow \frac{|FM|}{|FA|}=\frac{|MH|}{|AG|}}\)</span>。</p>
+<p>显然 <span class="arithmatex">\(\triangle \mathrm{DHM}\sim \triangle \mathrm{DGA}\)</span>，因此 <span class="arithmatex">\(\mathrm{\frac{|MH|}{|AG|}=\frac{|DM|}{|DA|}}\)</span>。</p>
+<p>因此 <span class="arithmatex">\(\mathrm{\frac{|FM|}{|FA|}=\frac{|DM|}{|DA|}\Rightarrow FD}\)</span> 平分 <span class="arithmatex">\(\mathrm{\angle MFA}\Rightarrow \angle \mathrm{DFE}=\frac{\pi}{2}\)</span>。由对称性知 <span class="arithmatex">\((-2,0),(4,0)\)</span> 均为所求定点。</p>
+<p><strong>反思</strong></p>
+<p><span class="arithmatex">\([1]\)</span>：考场上如果不知道这个结论会很被动。首先得猜到定点在 <span class="arithmatex">\(x\)</span> 轴上，然后代 <span class="arithmatex">\(l\)</span> 垂直 <span class="arithmatex">\(x\)</span> 轴的特殊情形把定点猜出来，然后再针对性证明应该是最好的策略。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2023.04 长沙一中月考，22（高观点：阿氏圆）</p>
+<p>设椭圆 <span class="arithmatex">\(\mathrm{C}: \frac{x^2}{8}+\frac{y^2}{6}=1\)</span>，焦点为 <span class="arithmatex">\(\mathrm{F_1,F_2}\)</span>，过 <span class="arithmatex">\(\mathrm{F_2}\)</span> 作斜率为 <span class="arithmatex">\(k\ (k&gt;0)\)</span> 的直线 <span class="arithmatex">\(m\)</span> 与椭圆 <span class="arithmatex">\(\mathrm{C}\)</span> 相交于 <span class="arithmatex">\(\mathrm{A,B}\)</span> 两点（点 <span class="arithmatex">\(\mathrm{A}\)</span> 在 <span class="arithmatex">\(x\)</span> 轴上方）。点 <span class="arithmatex">\(\mathrm{M,N}\)</span> 是椭圆上异于 <span class="arithmatex">\(\mathrm{A,B}\)</span> 的两点，<span class="arithmatex">\(\mathrm{MF_2,NF_2}\)</span> 分别平分 <span class="arithmatex">\(\angle \mathrm{AMB},\angle \mathrm{ANB}\)</span>，若 <span class="arithmatex">\(\triangle\mathrm{MF_2N}\)</span> 外接圆的面积为 <span class="arithmatex">\(\frac{81}{8}\pi\)</span>，求直线 <span class="arithmatex">\(m\)</span> 的方程。</p>
+</div>
+<p><strong>解答</strong></p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_7.png" alt="图片 mock_7.png" style="width: 50%;">
+</div>
+
+<p>由 <span class="arithmatex">\(\mathrm{MF_2,NF_2}\)</span> 是角平分线知 <span class="arithmatex">\(\mathrm{\frac{|MA|}{|MB|}=\frac{|NA|}{|NB|}=\frac{|AF_2|}{|F_2B|}}\)</span>，因此 <strong><span class="arithmatex">\(\mathrm{M,F_2,N}\)</span> 均在以 <span class="arithmatex">\(\mathrm{A,B}\)</span> 为定点，两边比为 <span class="arithmatex">\(\mathrm{\frac{|AF_2|}{|F_2B|}}\)</span> 的阿氏圆上</strong>。</p>
+<p>由 <span class="arithmatex">\(\triangle \mathrm{MF_2N}\)</span> 外接圆面积为 <span class="arithmatex">\(\frac{81}{8}\pi\)</span> 知 <span class="arithmatex">\(R=\frac{9}{2\sqrt{2}}\)</span>，则 <span class="arithmatex">\(\mathrm{\frac{|F_2A|}{|F_2B|}=\frac{2R-|F_2A|}{2R+|F_2B|}}\)</span>，解得 <span class="arithmatex">\(\frac{1}{|F_2A|}-\frac{1}{|F_2B|}=\frac{1}{R}=\frac{2\sqrt{2}}{9}\)</span>。</p>
+<p>设 <span class="arithmatex">\(\angle \mathrm{AF_2C}=\theta\)</span>，则 <span class="arithmatex">\(|F_2A|=\frac{b^2}{a+c\cos \theta},|F_2B|=\frac{b^2}{a-c\cos \theta}\)</span>，因此 <span class="arithmatex">\(\frac{2c\cos \theta}{b^2}=\frac{2\sqrt{2}}{9}\)</span>，即 <span class="arithmatex">\(\cos \theta =\frac{2}{3}\)</span>。</p>
+<p>因此直线 <span class="arithmatex">\(m\)</span> 的方程为 <span class="arithmatex">\(y=\frac{\sqrt{5}}{2}x-\frac{\sqrt{10}}{2}\)</span>。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2023.11 绍兴一模，22（高观点：极点极线，调和点列，阿氏圆）</p>
+<p>已知双曲线 <span class="arithmatex">\(\Gamma: x^2-y^2=1\)</span>，过点 <span class="arithmatex">\(\mathrm{M}(1,-1)\)</span> 的直线 <span class="arithmatex">\(l\)</span> 与该双曲线的左、右两支分别交于点 <span class="arithmatex">\(\mathrm{A,B}\)</span>。求定点 <span class="arithmatex">\(\mathrm{P}(t,t-2)\ (t\neq 1)\)</span>，使得 <span class="arithmatex">\(\angle \mathrm{MPA}=\angle \mathrm{MPB}\)</span>。</p>
+</div>
+<p><strong>溯源：极点极线+调和点列+阿氏圆</strong></p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_8.png" alt="图片 mock_8.png" style="width: 50%;">
+</div>
+
+<p><span class="arithmatex">\(\angle \mathrm{MPA}=\angle \mathrm{MPB}\)</span> 即 <span class="arithmatex">\(\mathrm{PM}\)</span> 为 <span class="arithmatex">\(\angle \mathrm{APB}\)</span> 的角平分线，由角平分线定理知 <span class="arithmatex">\(\mathrm{\frac{|PA|}{|PB|}=\frac{|AM|}{|MB|}}\)</span>。</p>
+<p>结构酷似调和点列，作 <span class="arithmatex">\(\mathrm{M}\)</span> 关于 <span class="arithmatex">\(\Gamma\)</span> 的极线 <span class="arithmatex">\(l_1: x+y=1\)</span>，交直线 <span class="arithmatex">\(l\)</span> 于 <span class="arithmatex">\(\mathrm{C}\)</span>，则 <span class="arithmatex">\(\mathrm{(A,B;M,C)}\)</span> 为调和点列。</p>
+<p>于是 <span class="arithmatex">\(\mathrm{\frac{|AM|}{|MB|}}=\mathrm{\frac{|AC|}{|CB|}}\)</span>，因此 <strong><span class="arithmatex">\(\mathrm{P}\)</span> 在以 <span class="arithmatex">\(\mathrm{MC}\)</span> 为直径的阿氏圆上</strong>，故 <span class="arithmatex">\(\angle \mathrm{MPC}=\frac{\pi}{2}\)</span>。</p>
+<p>又 <span class="arithmatex">\(\mathrm{P}(t,t-2)\)</span> 在 <span class="arithmatex">\(l_2: y=x-2\)</span> 上，且 <span class="arithmatex">\(l_1\)</span> 过 <span class="arithmatex">\(\mathrm{C}\)</span>，<span class="arithmatex">\(l_2\)</span> 过 <span class="arithmatex">\(\mathrm{M}\)</span>，<span class="arithmatex">\(l_1\bot l_2\)</span>，因此 <span class="arithmatex">\(\mathrm{P}\)</span> 为 <span class="arithmatex">\(l_1\)</span> 与 <span class="arithmatex">\(l_2\)</span> 的交点，即 <span class="arithmatex">\(\mathrm{P}(\frac{3}{2},-\frac{1}{2})\)</span>。</p>
+<p><strong>量产</strong> 只需要构造 <span class="arithmatex">\(l_2\)</span> 过 <span class="arithmatex">\(\mathrm{M}\)</span> 且垂直于 <span class="arithmatex">\(\mathrm{M}\)</span> 的极线 <span class="arithmatex">\(l_1\)</span> 即可，<span class="arithmatex">\(l_1\)</span> 与 <span class="arithmatex">\(l_2\)</span> 的交点即为定点 <span class="arithmatex">\(\mathrm{P}\)</span>。</p>
+<p><strong>解答 1：向量法（重思维，计算量小）</strong></p>
+<p>注意到 <span class="arithmatex">\(\angle \mathrm{APB}&lt;\pi\)</span>，因此 <strong><span class="arithmatex">\(\angle \mathrm{MPA}=\angle \mathrm{MPB}\)</span> 等价于 <span class="arithmatex">\(\cos \angle \mathrm{MPA}=\cos \angle \mathrm{MPB}\)</span></strong>，于是有：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\frac{\vec{PA}\cdot \vec{PM}}{|PA|}&amp;=\frac{\vec{PB}\cdot \vec{PM}}{|PB|}\\
+\frac{x_A+y_A-2t+2}{1-x_A}&amp;=\frac{x_B+y_B-2t+2}{x_B-1}
+\end{aligned}
+\]</div>
+<p>联立韦达，解得 <span class="arithmatex">\(t=\frac{3}{2}\)</span>，于是 <span class="arithmatex">\(\mathrm{P}(\frac{3}{2},-\frac{1}{2})\)</span>。</p>
+<p><strong>解答 2：到角公式</strong></p>
+<p>设 <span class="arithmatex">\(\mathrm{AP}\)</span> 的斜率为 <span class="arithmatex">\(k_1\)</span>，<span class="arithmatex">\(\mathrm{BP}\)</span> 的斜率为 <span class="arithmatex">\(k_2\)</span>，<strong>注意到 <span class="arithmatex">\(\mathrm{MP}\)</span> 的斜率为 <span class="arithmatex">\(1\)</span></strong>，则 <span class="arithmatex">\(\begin{cases}\tan\angle \mathrm{MPA}=\frac{1-k_1}{1+k_1} \\ \tan \angle\mathrm{MPB}=\frac{k_2-1}{1+k_2}\end{cases}\)</span>，因此 <span class="arithmatex">\(k_1k_2=1\)</span>。</p>
+<p>因此 <span class="arithmatex">\(\frac{t-2-y_A}{t-x_A}\cdot \frac{t-2-y_B}{t-x_B}=1\)</span>，联立韦达，解得 <span class="arithmatex">\(t=2\)</span>。</p>
+<hr />
+<div class="admonition problem">
+<p class="admonition-title">2024.03 T8，18（命题背景：曲线系，极点极线）</p>
+<p>已知双曲线 <span class="arithmatex">\(\tau: \frac{x^2}{4}-y^2=1\)</span>，<span class="arithmatex">\(\mathrm{B}\ (-a, 0), \mathrm{C}\ (a,0)\)</span>，其中 <span class="arithmatex">\(a&gt;2\)</span>，<span class="arithmatex">\(\mathrm{D}\ (x_0,y_0)\ (x_0\ge a,y_0&gt;0)\)</span> 是双曲线上一点，直线 <span class="arithmatex">\(\mathrm{DB}\)</span> 与双曲线 <span class="arithmatex">\(\tau\)</span> 的另一个交点为 <span class="arithmatex">\(\mathrm{E}\)</span>，直线 <span class="arithmatex">\(\mathrm{DC}\)</span> 与双曲线 <span class="arithmatex">\(\tau\)</span> 的另一个交点为 <span class="arithmatex">\(\mathrm{F}\)</span>，双曲线 <span class="arithmatex">\(\tau\)</span> 在 <span class="arithmatex">\(\mathrm{E,F}\)</span> 处的两条切线记为 <span class="arithmatex">\(l_1,l_2\)</span>，<span class="arithmatex">\(l_1\)</span> 与 <span class="arithmatex">\(l_2\)</span> 交于点 <span class="arithmatex">\(\mathrm{P}\)</span>，线段 <span class="arithmatex">\(\mathrm{DP}\)</span> 的中点为 <span class="arithmatex">\(\mathrm{G}\)</span>。</p>
+<p><strong>(2)</strong> 求 <span class="arithmatex">\(\mathrm{\frac{|GB|}{|GC|}}\)</span> 的值。</p>
+</div>
+<p><strong>曲线系 + 极点极线</strong></p>
+<div style="text-align: center;">
+<img src="../../assets/images/圆锥曲线/mock_13.png" alt="图片 mock_13.png" style="width: 50%;">
+</div>
+
+<p><span class="arithmatex">\(\textbf{Lemma.}\)</span> 对于二次曲线 <span class="arithmatex">\(ax^2+by^2=1\)</span> 上的四边形 <span class="arithmatex">\(\mathrm{A_1A_2A_3A_4}\)</span>，记 <span class="arithmatex">\(A_iA_{i+1}\)</span> 所在直线方程为 <span class="arithmatex">\(y=k_ix+m_i\)</span>，则有 <span class="arithmatex">\((k_1+k_3)(m_2+m_4)=(k_2+k_4)(m_1+m_3)\)</span>。</p>
+<p><span class="arithmatex">\(\textbf{Proof.}\)</span> 考虑曲线系 <span class="arithmatex">\((y-k_1x-m_1)(y-k_3x-m_3)+\lambda (y-k_2x-m_2)(y-k_4x-m_4)=ax^2+by^2-1\)</span>，对比 <span class="arithmatex">\([xy], [y]\)</span> 项前系数即可。</p>
+<p>考虑四边形 <span class="arithmatex">\(\mathrm{DDFE}\)</span>，<span class="arithmatex">\(\mathrm{DE}\)</span> 与 <span class="arithmatex">\(\mathrm{DF}\)</span> 在 <span class="arithmatex">\(x\)</span> 轴上的截距为相反数，故 <span class="arithmatex">\(\mathrm{DD}\)</span> 与 <span class="arithmatex">\(\mathrm{EF}\)</span> 在 <span class="arithmatex">\(x\)</span> 轴上的截距也为相反数。</p>
+<p>又 <span class="arithmatex">\(\mathrm{DD}:\ \frac{x_0x}{4}-y_0y=1\)</span> 过 <span class="arithmatex">\((\frac{4}{x_0},0)\)</span>，故 <span class="arithmatex">\(\mathrm{EF}\)</span> 过 <span class="arithmatex">\((-\frac{4}{x_0},0)\)</span>。</p>
+<p>而 <span class="arithmatex">\(\mathrm{EF}\)</span> 为 <span class="arithmatex">\(\mathrm{P}\)</span> 的极线，由配极原理知 <span class="arithmatex">\(\mathrm{P}\)</span> 在 <span class="arithmatex">\(\mathrm{M}\)</span> 的极线上，故 <span class="arithmatex">\(x_P=-x_0\)</span>。</p>
+<p><strong>优化解答：齐次化</strong></p>
+<p>设 <span class="arithmatex">\(\mathrm{EF}: m(x-x_0)+n(y-y_0)=1\)</span>，注意到 <span class="arithmatex">\(\frac{1}{k_{DE}}+\frac{1}{k_{DF}}=\frac{2x_0}{y_0}\)</span>，联立得</p>
+<div class="arithmatex">\[
+\left(\frac{1}{4}+\frac{mx_0}{2}\right)\left(\frac 1k\right)^2+\left(\frac{nx_0}{2}-2my_0\right)\left(\frac 1k\right)-\left(1+2ny_0\right)=0
+\]</div>
+<p>由韦达得 <span class="arithmatex">\(m(-\frac{4}{x_0}-x_0)-ny_0=1\)</span>，因此 <span class="arithmatex">\(\mathrm{EF}\)</span> 过 <span class="arithmatex">\((-\frac{4}{x_0},0)\)</span>。</p>
+<p>设 <span class="arithmatex">\(\mathrm{P}(x_1,y_1)\)</span>，则 <span class="arithmatex">\(\mathrm{EF}:\ \frac{x_1x}{4}-y_1y=1\)</span>，故 <span class="arithmatex">\(x_1=-x_0\)</span>，因此 <span class="arithmatex">\(\mathrm{\frac{|GB|}{|GC|}=1}\)</span>。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: 概览">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                概览
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E5%AF%BC%E6%95%B0/" class="md-footer__link md-footer__link--next" aria-label="下一页: 导数">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                导数
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/Phoenix-Alan233" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:wlzhouzhuan@gmail.com" target="_blank" rel="noopener" title="Email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.code.select"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/javascripts/extra.js"></script>
+      
+        <script src="../../assets/javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
