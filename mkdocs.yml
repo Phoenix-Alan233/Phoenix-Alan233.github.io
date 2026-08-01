@@ -26,8 +26,15 @@ nav:
       - Summer 2026: ACM/ZJU-Summer/Summer-2026.md
   - CTF:
     - 概览: CTF/index.md
+    - 学习笔记:
+      - Crypto: CTF/notes/Crypto.md
+      - Pwn: CTF/notes/Pwn.md
+      - Reverse: CTF/notes/Reverse.md
     - WriteUp:
-      - SHCTF 2026: CTF/WriteUp/SHCTF-2026.md
+      - SHCTF 2026: CTF/writeup/SHCTF-2026.md
+  - 计算机系统:
+    - Linux 101/201: System/Linux-101.md
+    - Computer Architecture: System/Computer-Architecture.md
   - 关于: about.md
 
 # 自定义样式和脚本

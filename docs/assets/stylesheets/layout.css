@@ -61,15 +61,30 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* 表格样式优化 */
+/* 表格样式优化 - 三线格 */
 .md-typeset table:not([class]) {
-    border-radius: 0.3rem;
+    border-collapse: collapse;
     display: table;
-    overflow: hidden;
+    width: 100%;
+    border: none;
+    border-top: 2px solid var(--md-default-fg-color);
+    border-bottom: 2px solid var(--md-default-fg-color);
 }
 
 .md-typeset table:not([class]) th {
     font-weight: 600;
+    border: none;
+    border-bottom: 1px solid var(--md-default-fg-color);
+    padding: 0.3rem 0.3rem;
+}
+
+.md-typeset table:not([class]) td {
+    border: none;
+    padding: 0.3rem 0.3rem;
+}
+
+.md-typeset table:not([class]) tr {
+    border: none;
 }
 
 /* 列表间距优化 */

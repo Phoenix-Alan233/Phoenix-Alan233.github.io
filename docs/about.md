@@ -1,8 +1,8 @@
 # 关于我
 
-一名 CS 专业的 ZJUer，对数学、算法、信息安全有着浓厚的兴趣，一直在学习成长中。
+一名 CS 专业的 ZJUer，对数学、算法、安全有着浓厚的兴趣，一直在学习成长中。
 
-我的 MBTI 是 ENFJ，喜欢做一些小手工，偏爱密室逃脱。欢迎约我玩~
+我的 MBTI 是 ENFJ，热爱生活，喜欢做各种小手工，偏爱密室逃脱。欢迎约我玩~
 
 ## 联系方式
 
@@ -43,7 +43,7 @@
 ## 科研
 
 - TTS（Text-to-Speech）语音合成方向
-    - [Comprehensive Benchmarking of Long-Form Speech Generation in Diverse Scenarios](https://arxiv.org/abs/2605.28618)，四作
+    - ACL 2026 Findings，[Comprehensive Benchmarking of Long-Form Speech Generation in Diverse Scenarios](https://arxiv.org/abs/2605.28618)，四作
     - 一篇 AAAI 在投，共一第二
 
 ## 实习
