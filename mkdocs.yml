@@ -6,6 +6,30 @@ site_author: Alan
 repo_name: Phoenix-Alan233/Phoenix-Alan233.github.io
 repo_url: https://github.com/Phoenix-Alan233/Phoenix-Alan233.github.io
 
+# 导航结构
+nav:
+  - 首页: index.md
+  - 数学:
+    - 概览: 数学/index.md
+    - 高中数学:
+      - 圆锥曲线: 数学/圆锥曲线.md
+      - 导数: 数学/导数.md
+      - 好题分享: 数学/好题分享.md
+      - 高考、强基与竞赛: 数学/高考、强基与竞赛.md
+  - ACM/ICPC:
+    - 概览: ACM/index.md
+    - 专题学习:
+      - 线段树进阶: ACM/专题学习/线段树进阶.md
+      - 反演进阶: ACM/专题学习/反演进阶.md
+    - ZJU Summer:
+      - Summer 2025: ACM/ZJU-Summer/Summer-2025.md
+      - Summer 2026: ACM/ZJU-Summer/Summer-2026.md
+  - CTF:
+    - 概览: CTF/index.md
+    - WriteUp:
+      - SHCTF 2026: CTF/WriteUp/SHCTF-2026.md
+  - 关于: about.md
+
 # 自定义样式和脚本
 extra_css:
   - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
@@ -70,6 +94,10 @@ plugins:
         - zh
         - en
 
+# 确保 PDF 文件被复制
+exclude_docs: |
+  *.tmp
+
 # Hooks
 hooks:
   - hooks/pdf_embed.py
@@ -82,6 +110,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: ⚓︎
+  - pymdownx.tilde
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -111,27 +140,3 @@ extra:
     - icon: fontawesome/solid/envelope
       link: mailto:wlzhouzhuan@gmail.com
       name: Email
-
-# 导航结构
-nav:
-  - 首页: index.md
-  - 数学:
-    - 高中数学:
-      - 圆锥曲线: 数学/圆锥曲线.md
-      - 导数: 数学/导数.md
-      - 好题分享: 数学/好题分享.md
-      - 高考、强基与竞赛: 数学/高考、强基与竞赛.md
-  - ACM/ICPC:
-    - 概览: ACM/index.md
-    - 专题学习:
-      - 线段树进阶: ACM/专题学习/线段树进阶.md
-      - 反演进阶: ACM/专题学习/反演进阶.md
-    - ZJU Summer:
-      - Summer 2025: ACM/ZJU-Summer/Summer-2025.md
-      - Summer 2026: ACM/ZJU-Summer/Summer-2026.md
-  - CTF:
-    - 学习笔记:
-      - 综述: CTF/overall.md
-    - 比赛:
-      - SHCTF 2026: CTF/SHCTF 2026.md
-  - 关于: about.md
