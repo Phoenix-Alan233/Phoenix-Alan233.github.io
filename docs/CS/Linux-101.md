@@ -1,9 +1,10 @@
 # Linux 101/201（🚧施工中）
 
-**“享受极客精神与开源文化”**
+> **“享受极客精神与开源文化”**
 
-- Linux 101：https://101.lug.ustc.edu.cn/
-- Linux 201：https://201.ustclug.org/
+!!! 相关课程
+    - Linux 101：https://101.lug.ustc.edu.cn/
+	- Linux 201：https://201.ustclug.org/
 
 ---
 

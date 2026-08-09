@@ -1,4 +1,4 @@
-site_name: Alan233 的小站
+site_name: Alan233 的小站🍀💓✨
 site_url: https://phoenix-alan233.github.io/
 site_author: Alan
 
@@ -9,18 +9,15 @@ repo_url: https://github.com/Phoenix-Alan233/Phoenix-Alan233.github.io
 # 导航结构
 nav:
   - 首页: index.md
-  - 数学:
-    - 概览: 数学/index.md
-    - 高中数学:
-      - 圆锥曲线: 数学/圆锥曲线.md
-      - 导数: 数学/导数.md
-      - 好题分享: 数学/好题分享.md
-      - 高考、强基与竞赛: 数学/高考、强基与竞赛.md
   - ACM/ICPC:
     - 概览: ACM/index.md
     - 专题学习:
       - 线段树进阶: ACM/专题学习/线段树进阶.md
       - 反演进阶: ACM/专题学习/反演进阶.md
+    - 信息学竞赛:
+      - 省选: ACM/OI/省选.md
+    - 杂项:
+      - Ynoi: ACM/Misc/Ynoi.md
     - ZJU Summer:
       - Summer 2025: ACM/ZJU-Summer/Summer-2025.md
       - Summer 2026: ACM/ZJU-Summer/Summer-2026.md
@@ -32,10 +29,35 @@ nav:
       - Reverse: CTF/notes/Reverse.md
     - WriteUp:
       - SHCTF 2026: CTF/writeup/SHCTF-2026.md
-  - 计算机系统:
-    - Linux 101/201: System/Linux-101.md
-    - Computer Architecture: System/Computer-Architecture.md
-  - 关于: about.md
+  - CS:
+    - 实用技能拾遗:
+      - Linux 101/201: CS/Linux-101.md
+      - 硬件设施: CS/hardware.md
+
+    - 编程语言:
+      - C++: CS/OOP.md
+
+  - AI:
+    - 概览: AI/index.md
+
+    - d2l:
+      - Ch 1. 深度学习基础: AI/d2l/chapter1.md
+      - Ch 2. 卷积神经网络: AI/d2l/chapter2.md
+      - Ch 3. 循环神经网络: AI/d2l/chapter3.md
+      - Ch 4. 注意力机制: AI/d2l/chapter4.md
+      - Ch 5. 优化算法: AI/d2l/chapter5.md
+      # - Ch 6. 高性能计算: AI/d2l/chapter6.md
+      - Ch 7. 计算机视觉: AI/d2l/chapter7.md
+      - Ch 8. 自然语言处理: AI/d2l/chapter8.md
+
+  - Mathematics:
+    - 概览: 数学/index.md
+    - 高中数学:
+      - 圆锥曲线: 数学/圆锥曲线.md
+      - 导数: 数学/导数.md
+      - 好题分享: 数学/好题分享.md
+      - 高考、强基与竞赛: 数学/高考、强基与竞赛.md
+  - About: about.md
 
 # 自定义样式和脚本
 extra_css:

@@ -22,11 +22,11 @@ CTF 业余爱好者，对 Crypto、Pwn、Reverse 比较感兴趣，一直在努�
 
 ## 收藏的笔记 / WP
 
-- mcfx，[WriteUps](https://mcfx.us)
-- TonyCrane，[学习笔记](https://note.tonycrane.cc/ctf)、[WriteUps](https://note.tonycrane.cc/writeups)
-- WuYan，[WriteUps](http://www.wuy4n.com)
-- 5dbwat4，[学习笔记](https://note.5dbwat4.top/CS/CTF)、[WriteUps](https://blog.5dbwat4.top/archives)
-- BruceJin，[WriteUps](https://note.eternity1005.top/blog/CTF)
+- mcfx，[WriteUp](https://mcfx.us)
+- TonyCrane，[学习笔记](https://note.tonycrane.cc/ctf)、[WriteUp](https://note.tonycrane.cc/writeups)
+- WuYan，[WriteUp](http://www.wuy4n.com)
+- 5dbwat4，[学习笔记](https://note.5dbwat4.top/CS/CTF)、[WriteUp](https://blog.5dbwat4.top/archives)
+- BruceJin，[WriteUp](https://note.eternity1005.top/blog/CTF)
 
 ## CTF 概述
 
