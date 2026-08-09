@@ -50,13 +50,14 @@ nav:
       - Ch 7. 计算机视觉: AI/d2l/chapter7.md
       - Ch 8. 自然语言处理: AI/d2l/chapter8.md
 
-  - Mathematics:
-    - 概览: 数学/index.md
+  - Math:
+    - 概览: math/index.md
     - 高中数学:
-      - 圆锥曲线: 数学/圆锥曲线.md
-      - 导数: 数学/导数.md
-      - 好题分享: 数学/好题分享.md
-      - 高考、强基与竞赛: 数学/高考、强基与竞赛.md
+      - 新定义压轴题: math/新定义压轴题.md
+      - 圆锥曲线: math/圆锥曲线.md
+      - 导数: math/导数.md
+      - 好题分享: math/好题分享.md
+      - 高考、强基与竞赛: math/高考、强基与竞赛.md
   - About: about.md
 
 # 自定义样式和脚本

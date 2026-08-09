@@ -2,7 +2,7 @@
 
 CTF 业余爱好者，对 Crypto、Pwn、Reverse 比较感兴趣，一直在努力成长中！
 
-## 参加的比赛
+## 参加过的比赛
 
 - 校内比赛：[ZJUCTF 2024](https://ctf.zjusec.com/games/4)、[ZJUCTF 2025](https://ctf.zjusec.com/games/6) 以及 [CSACTF 2026](https://csa.zju.edu.cn/news/10)（需校网环境）
 
