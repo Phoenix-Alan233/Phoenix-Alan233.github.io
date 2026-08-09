@@ -39,25 +39,28 @@ nav:
 
   - AI:
     - 概览: AI/index.md
-
-    - d2l:
-      - Ch 1. 深度学习基础: AI/d2l/chapter1.md
-      - Ch 2. 卷积神经网络: AI/d2l/chapter2.md
-      - Ch 3. 循环神经网络: AI/d2l/chapter3.md
-      - Ch 4. 注意力机制: AI/d2l/chapter4.md
-      - Ch 5. 优化算法: AI/d2l/chapter5.md
-      # - Ch 6. 高性能计算: AI/d2l/chapter6.md
-      - Ch 7. 计算机视觉: AI/d2l/chapter7.md
-      - Ch 8. 自然语言处理: AI/d2l/chapter8.md
+    - 深度学习:
+      - d2l:
+        - Ch 1. 深度学习基础: AI/d2l/chapter1.md
+        - Ch 2. 卷积神经网络: AI/d2l/chapter2.md
+        - Ch 3. 循环神经网络: AI/d2l/chapter3.md
+        - Ch 4. 注意力机制: AI/d2l/chapter4.md
+        - Ch 5. 优化算法: AI/d2l/chapter5.md
+        - Ch 6. 高性能计算: AI/d2l/chapter6.md
+        - Ch 7. 计算机视觉: AI/d2l/chapter7.md
+        - Ch 8. 自然语言处理: AI/d2l/chapter8.md
 
   - Math:
     - 概览: math/index.md
     - 高中数学:
       - 新定义压轴题: math/新定义压轴题.md
-      - 圆锥曲线: math/圆锥曲线.md
-      - 导数: math/导数.md
-      - 好题分享: math/好题分享.md
-      - 高考、强基与竞赛: math/高考、强基与竞赛.md
+      - 大学家教:
+        - 数学家教: math/家教.md
+      - 高中时期笔记:
+        - 圆锥曲线: math/圆锥曲线.md
+        - 导数: math/导数.md
+        - 好题分享: math/好题分享.md
+        - 高考、强基与竞赛: math/高考、强基与竞赛.md
   - About: about.md
 
 # 自定义样式和脚本
