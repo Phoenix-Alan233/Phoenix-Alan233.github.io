@@ -112,6 +112,8 @@ $$
 
 一张图就能理清 LeNet 的模型架构（所以说好的论文配上好的插图是多么重要，反观现在 AI 顶会的论文，真的是到处灌水，AI 写 AI 审，实用价值极低，质量一言难尽……）：
 
+![](../assets/LeNet.png)
+
 ![](https://d2l.ai/_images/lenet.svg)
 
 它先使用**卷积层**来学习图片空间信息，然后使用**全连接层**来转换到类别空间。网络如下：
@@ -137,6 +139,8 @@ net = nn.Sequential(
 - ImageNet：自然物体的彩色图片，大小 $469\times 387$，样本数 1.2M，类别 1000
 
 AlexNet 赢得了 2012 年 ImageNet 竞赛，而它本质其实还是**更深更大的 LeNet**，主要改进的点就是使用了 dropout、ReLU、max pooling 以及数据增强。仔细想想这三个手段都是很有道理的，这也带来了计算机视觉方法论的改变。
+
+![](../assets/AlexNet.png)
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 1rem 0;">
   <img src="https://zh-v2.d2l.ai/_images/alexnet.svg" alt="Debian" style="max-width: 48%;">
