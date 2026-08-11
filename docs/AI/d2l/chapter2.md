@@ -8,6 +8,9 @@
         - [22 池化层](https://www.bilibili.com/video/BV1EV411j7nX)
         - [23 经典卷积神经网络 LeNet](https://www.bilibili.com/video/BV1t44y1r7ct)
         - [24 深度卷积神经网络 AlexNet](https://www.bilibili.com/video/BV1h54y1L7oe)
+        - [25 使用块的网络 VGG](https://www.bilibili.com/video/BV1Ao4y117Pd)
+        - [26 网络中的网络 NiN](https://www.bilibili.com/video/BV1Uv411G71b)
+        - [27 含并行连结的网络 GoogLeNet / Inception V3](https://www.bilibili.com/video/BV1b5411g7Xo)
 
 > 我们给小猫小狗的图片做分类，用还不错的相机拍出的照片 12M 像素，算上 RGB 就 36M 元素，如果使用大小为 100 的单隐藏层 MLP，就需要 3.6B 参数。
 >
@@ -103,15 +106,15 @@ $$
 
 在 pytorch 框架下，通常默认 stride 与池化窗口大小相同，也就是窗口间没有重叠，感觉也符合直觉。
 
-## 卷积神经网络 LeNet
+## LeNet
 
-首先不得不提 MNIST 数据集，这是一套手写数字识别的 dataset，共 50k 个训练数据、10k 个测试数据，图像大小 28*28，一共分为 10 类（数字 0~9）。最开始神经网络的主要用途是识别图像中的手写数字，Yann LeCun 在 1989 年提出了 LeNet 模型解决这个问题，取得了与 SVM 性能相媲美的成果。
+最初神经网络的主要用途是识别图像中的手写数字，Yann LeCun 在 1989 年提出了 LeNet 模型解决这个问题，取得了与 SVM 性能相媲美的成果。他使用的数据集是 MNIST，这是一套很经典的手写数字识别 dataset，共 60K 个训练数据、10K 个测试数据，图像大小 $28\times 28$，一共分为 10 类（数字 0~9）。
 
 一张图就能理清 LeNet 的模型架构（所以说好的论文配上好的插图是多么重要，反观现在 AI 顶会的论文，真的是到处灌水，AI 写 AI 审，实用价值极低，质量一言难尽……）：
 
 ![](https://d2l.ai/_images/lenet.svg)
 
-它先使用**卷积层**来学习图片空间信息，然后使用**全连接层**来转换到类别空间。网络架构如下：
+它先使用**卷积层**来学习图片空间信息，然后使用**全连接层**来转换到类别空间。网络如下：
 
 ```python
 net = nn.Sequential(
@@ -125,8 +128,48 @@ net = nn.Sequential(
     nn.Linear(84, 10))
 ```
 
+## AlexNet
 
-## 深度卷积神经网络 AlexNet
+在深度学习以前，对图像的处理通常会采用特征上的抽取（**特征工程**），CV 的研究者提出了非常多的特征描述子，其中最有名的就是 SIFT（各个方向抽取小向量来描述这张图片）、SURF。同时，此前我们常用的是 MNIST 数据集以及它的衍生 Fashion-MNIST 数据集，在 2010 年出了 ImageNet 数据集，可以说是王炸，远远🍎于前者：
+
+- MNIST：手写数字的黑白图片，大小 $28\times 28$，样本数 60K，类别 10
+- Fashion-MNIST：MNIST 的平替，服装的黑白图片，其余相同
+- ImageNet：自然物体的彩色图片，大小 $469\times 387$，样本数 1.2M，类别 1000
+
+AlexNet 赢得了 2012 年 ImageNet 竞赛，而它本质其实还是**更深更大的 LeNet**，主要改进的点就是使用了 dropout、ReLU、max pooling 以及数据增强。仔细想想这三个手段都是很有道理的，这也带来了计算机视觉方法论的改变。
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 1rem 0;">
+  <img src="https://zh-v2.d2l.ai/_images/alexnet.svg" alt="Debian" style="max-width: 48%;">
+</div>
+
+原论文（包括这张图）用的是 ImageNet，下面用的是 Fashion-MNIST，将输入图像拉成 $224\times 224$，输入通道置为 $1$，输出类别改成 $10$，其余与原论文一致：
+
+```python
+net = nn.Sequential(
+    # 这里使用一个11*11的更大窗口来捕捉对象。
+    # 同时，步幅为4，以减少输出的高度和宽度。
+    # 另外，输出通道的数目远大于LeNet
+    nn.Conv2d(1, 96, kernel_size=11, stride=4, padding=1), nn.ReLU(),
+    nn.MaxPool2d(kernel_size=3, stride=2),
+    # 减小卷积窗口，使用填充为2来使得输入与输出的高和宽一致，且增大输出通道数
+    nn.Conv2d(96, 256, kernel_size=5, padding=2), nn.ReLU(),
+    nn.MaxPool2d(kernel_size=3, stride=2),
+    # 使用三个连续的卷积层和较小的卷积窗口。
+    # 除了最后的卷积层，输出通道的数量进一步增加。
+    # 在前两个卷积层之后，汇聚层不用于减少输入的高度和宽度
+    nn.Conv2d(256, 384, kernel_size=3, padding=1), nn.ReLU(),
+    nn.Conv2d(384, 384, kernel_size=3, padding=1), nn.ReLU(),
+    nn.Conv2d(384, 256, kernel_size=3, padding=1), nn.ReLU(),
+    nn.MaxPool2d(kernel_size=3, stride=2),
+    nn.Flatten(),
+    # 这里，全连接层的输出数量是LeNet中的好几倍。使用dropout层来减轻过拟合
+    nn.Linear(6400, 4096), nn.ReLU(),
+    nn.Dropout(p=0.5),
+    nn.Linear(4096, 4096), nn.ReLU(),
+    nn.Dropout(p=0.5),
+    # 最后是输出层。由于这里使用Fashion-MNIST，所以用类别数为10，而非论文中的1000
+    nn.Linear(4096, 10))
+```
 
 ## 使用块的网络 VGG
 

@@ -49,11 +49,11 @@ DeepSeek 系列模型均**开源模型权重**，具体可见 https://huggingfac
     - DS 的价格亲民实惠，但确实有点蠢（（
     - [官方新闻](https://api-docs.deepseek.com/zh-cn/news/news260424)：DeepSeek-V4 预览版：迈入百万上下文普惠时代
     - [论文](https://arxiv.org/pdf/2606.19348)：Towards Highly Efficient Million-Token Context Intelligence
-- 2025.01，DeepSeek-R1（`deepseek-reasoner`）
+- 2025.01，DeepSeek-R1（`deepseek-reasoner`），已淘汰
     - 在后训练阶段大规模使用 RL，在仅有极少标注数据的情况下，极大提升了模型推理能力
     - [官方新闻](https://api-docs.deepseek.com/zh-cn/news/news250120)：DeepSeek-R1 发布，性能对标 OpenAI o1 正式版
     - [论文](https://arxiv.org/pdf/2501.12948)：DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
-- 2024.12，DeepSeek-V3（`deepseek-chat`）
+- 2024.12，DeepSeek-V3（`deepseek-chat`），已淘汰
     - 自研 MoE 模型，671B 参数，激活 37B，在 14.8T token 上进行了预训练
     - [官方新闻](https://api-docs.deepseek.com/zh-cn/news/news1226)：DeepSeek-V3 正式发布
     - [论文](https://arxiv.org/pdf/2412.19437)：DeepSeek-V3 Technical Report
