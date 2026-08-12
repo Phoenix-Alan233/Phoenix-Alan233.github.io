@@ -8,3 +8,4 @@
 - 第 16 届全国大学生数学竞赛（非数学 A 类）
 - 2023 年全国中学生数学奥林匹克浙江省初赛
 - 2022 American Mathematics Competition 12
+
