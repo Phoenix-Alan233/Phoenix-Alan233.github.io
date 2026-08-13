@@ -45,8 +45,9 @@ https://zhuanlan.zhihu.com/p/2060741715095560795
 
 DeepSeek 系列模型均**开源模型权重**，具体可见 https://huggingface.co/collections/deepseek-ai/deepseek-v4。
 
-- 2026.04，DeepSeek-V4（`deepseek-v4-{pro,flash}`）
+- 2026.08.13，DeepSeek-V4（`deepseek-v4-{pro,flash}`）
     - DS 的价格亲民实惠，但确实有点蠢（（
+    - [官方新闻](https://api-docs.deepseek.com/zh-cn/news/news260813/)：DeepSeek-V4-Pro 正式版上线
     - [官方新闻](https://api-docs.deepseek.com/zh-cn/news/news260424)：DeepSeek-V4 预览版：迈入百万上下文普惠时代
     - [论文](https://arxiv.org/pdf/2606.19348)：Towards Highly Efficient Million-Token Context Intelligence
 - 2025.01，DeepSeek-R1（`deepseek-reasoner`），已淘汰
