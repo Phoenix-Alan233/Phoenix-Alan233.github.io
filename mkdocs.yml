@@ -31,11 +31,14 @@ nav:
     - WriteUp:
       - SHCTF 2026: CTF/writeup/SHCTF-2026.md
   - CS:
+    - 概览: CS/index.md
     - 实用技能拾遗:
       - Linux 101/201: CS/Linux-101.md
       - 硬件设施: CS/hardware.md
+      - SadServers: CS/SadServers.md
 
     - 编程语言:
+      - C: CS/C.md
       - C++: CS/OOP.md
 
   - AI:
@@ -66,6 +69,7 @@ nav:
         - 圆曲妙妙屋: math/圆曲妙妙屋.md
         - 导数妙妙屋: math/导数妙妙屋.md
         - 高考、强基与竞赛: math/高考、强基与竞赛.md
+        - 愚人节题: math/愚人节题.md
   - About: about.md
 
 # 自定义样式和脚本
