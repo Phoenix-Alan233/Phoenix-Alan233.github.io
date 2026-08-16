@@ -9,6 +9,7 @@ repo_url: https://github.com/Phoenix-Alan233/Phoenix-Alan233.github.io
 # 导航结构
 nav:
   - 首页: index.md
+
   - ACM/ICPC:
     - 概览: ACM/index.md
     - 专题学习:
@@ -22,6 +23,7 @@ nav:
     - ZJU Summer:
       - Summer 2025: ACM/ZJU-Summer/Summer-2025.md
       - Summer 2026: ACM/ZJU-Summer/Summer-2026.md
+
   - CTF:
     - 概览: CTF/index.md
     - 学习笔记:
@@ -30,6 +32,7 @@ nav:
       - Reverse: CTF/notes/Reverse.md
     - WriteUp:
       - SHCTF 2026: CTF/writeup/SHCTF-2026.md
+
   - CS:
     - 概览: CS/index.md
     - 实用技能拾遗:
@@ -53,6 +56,9 @@ nav:
         - Ch 6. 高性能计算: AI/d2l/chapter6.md
         - Ch 7. 计算机视觉: AI/d2l/chapter7.md
         - Ch 8. 自然语言处理: AI/d2l/chapter8.md
+
+  - Quant:
+    - 概览: quant/index.md
 
   - Math:
     - 概览: math/index.md
