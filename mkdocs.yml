@@ -76,6 +76,11 @@ nav:
         - 导数妙妙屋: math/导数妙妙屋.md
         - 高考、强基与竞赛: math/高考、强基与竞赛.md
         - 愚人节题: math/愚人节题.md
+
+  - Misc:
+    - Game:
+      - Turing Complete (图灵完备): Misc/game/图灵完备.md
+
   - About: about.md
 
 # 自定义样式和脚本
