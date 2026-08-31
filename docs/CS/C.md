@@ -235,6 +235,14 @@
 - 标准 I/O 比较简单，文件 I/O 其实我感觉遇到了就查阅文档吧，没啥好记录的。
     - <https://ckc-agc.bowling233.top/programming/archive/23fall/lec3/lec3/#_6>
 
+## STL
+
+- `qsort(void *_Base, size_t _NumOfElements, size_t _SizeOfElements, int (*_PtFuncCompare)(const void *, const void *))`
+
+函数库：`stdlib.h`；
+
+要点：`cmp(*a, *b)` 比较，强制使用指针，返回值 $>0$ 表示 $a>b$，$=0$ 表示 $a=b$，$<0$ 表示 $a<b$。
+
 ## 一些奇妙的语法特性（C 尖、程算）
 
 - 第一题

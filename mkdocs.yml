@@ -38,12 +38,17 @@ nav:
     - 概览: CS/index.md
     - 实用技能拾遗:
       - Linux 101/201: CS/Linux-101.md
+      - git: CS/git.md
       - 硬件设施: CS/hardware.md
       - SadServers: CS/SadServers.md
+
+    - 专业课程:
+      - 操作系统: CS/OS.md
 
     - 编程语言:
       - C: CS/C.md
       - C++: CS/OOP.md
+      - CUDA C++: CS/CUDA.md
 
   - AI:
     - 概览: AI/index.md
@@ -87,6 +92,7 @@ nav:
       - 2022.12.09 不等式的最后一道防线——拉格朗日乘数法: math/公众号/不等式的最后一道防线——拉格朗日乘数法.md
       - 2023.01.06 木棍运动轨迹与曲线的本质: math/公众号/木棍运动轨迹/index.md
       - 2023.01.08 日影轨迹追踪: math/公众号/日影轨迹追踪/index.md
+      - 2023.07.23 圆锥曲线出题背景探究: math/公众号/圆锥曲线出题背景探究.md
 
   - Misc:
     - Game:
