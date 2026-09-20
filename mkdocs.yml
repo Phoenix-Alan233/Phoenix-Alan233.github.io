@@ -33,6 +33,8 @@ nav:
       - Reverse: CTF/notes/Reverse.md
     - WriteUp:
       - SHCTF 2026: CTF/writeup/SHCTF-2026.md
+      - ZJUCTF 2025: CTF/writeup/ZJUCTF-2025.md
+      - ZJUCTF 2024: CTF/writeup/ZJUCTF-2024.md
 
   - CS:
     - 概览: CS/index.md
