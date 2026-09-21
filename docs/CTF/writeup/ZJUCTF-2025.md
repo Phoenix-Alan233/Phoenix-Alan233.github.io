@@ -179,3 +179,10 @@ Modified input: AX = 0 (Incorrect branch)
 ```
 
 脚本同时导出内嵌程序 `inner.exe`、部分代码还原后的加载映像 `decoded.bin`，以及校验函数反汇编 `checker.asm`。`decoded.bin` 用于分析和模拟，不是完整修复后可直接运行的 DOS EXE。
+
+---
+
+以下是我的赛时 WriteUp（AI 味很重，当时还在用网页版 Gemini，但 AI 的威力已经可见一二）：
+
+!pdf[../../../assets/pdf/ZJUCTF-2025-writeup.pdf]
+
