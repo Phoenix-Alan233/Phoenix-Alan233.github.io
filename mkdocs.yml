@@ -17,6 +17,7 @@ nav:
       - 反演进阶: ACM/专题学习/反演进阶.md
     - 信息学竞赛:
       - 省选: ACM/OI/省选.md
+      - NOIP: ACM/OI/NOIP.md
       - Ynoi: ACM/OI/Ynoi.md
     - 杂项:
       - Primitive-root: ACM/Misc/Primitive-root.md
