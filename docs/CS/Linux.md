@@ -1,10 +1,10 @@
-# Linux 101/201（🚧施工中）
+# Linux 命令（备忘录）
 
 > **“享受极客精神与开源文化”**
 
-!!! 相关课程
+!!! 参考资料
     - Linux 101：https://101.lug.ustc.edu.cn/
-	- Linux 201：https://201.ustclug.org/
+	  - Linux 201：https://201.ustclug.org/
 
 ---
 
@@ -44,9 +44,10 @@ Arch Linux 是一个基于 x86\-64 架构的发行版，因“简单、现代、
 
 正因这个特殊的设计理念，为了让一般用户也能用上 Arch Linux 的强大功能，它的变种 Manjaro 发行版于 2011 年问世，它更注重易用。
 
-![image\.png](图片和附件/image.png)
-
-![image\.png](图片和附件/image%201.png)
+<div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 1rem 0;">
+  <img src="../图片和附件/image.png" alt="Debian" style="max-width: 48%;">
+  <img src="../图片和附件/image%201.png" alt="Ubuntu" style="max-width: 55%;">
+</div>
 
 ## 软件安装
 
@@ -91,7 +92,7 @@ $ find [OPTION] PATH [EXPRESSION]
 tar -czvf target.tar.gz test/
 ```
 
-可以将 test/ 文件夹下的所有内容全部打包到 target\.tar\.gz 中。
+可以将 test/ 文件夹下的所有内容全部打包到 `target.tar.gz` 中。
 
 ## 进程、前后台、例行性任务
 
@@ -205,8 +206,6 @@ drwxrwxr-x 2 ustc ustc 4096 Feb  3 22:38 a_folder
 ## 文本处理与网络请求
 
 > 我觉得 wc、diff、sed 已经没那么重要了，这更多是古法编程产物，因此略。
-> 
-> 
 
 ### I/O 重定向
 
@@ -234,7 +233,7 @@ sbin
 
 - `curl` 是一个利用 URL 语法在命令行下工作的文件传输工具，其中 c 意为 client。它可以自定义各种请求参数，因此在模拟 web 请求方面更擅长；wget 由于支持 FTP 协议和递归遍历，因此在下载文件方面更擅长。
 
-    - `curl 链接` 即可得到响应体，而 `curl -I 链接` 只展示响应头；对应的，`curl -i 链接` 就有响应头\+响应体。
+    - `curl 链接` 即可得到响应体，而 `curl -I 链接` 只展示响应头；对应的，`curl -i 链接` 就有响应头 + 响应体。
 
 ## Docker
 
@@ -268,7 +267,7 @@ This message shows that your installation appears to be working correctly.
 docker run -it -v ${PWD}/Linux101-docs:/docs -p 8000:8000 --name test squidfunk/mkdocs-material
 ```
 
-\-it 是获得可交互的 Shell 所必须的，平时都加上；蓝色就是给当前容器起个名字。
+`-it` 是获得可交互的 Shell 所必须的，平时都加上；蓝色就是给当前容器起个名字。
 
 我觉得我只需要会用 docker 就行了，暂时没自己构建容器的需求，这一块不学了。
 

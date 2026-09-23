@@ -39,8 +39,8 @@ nav:
 
   - CS:
     - 概览: CS/index.md
-    - 实用技能拾遗:
-      - Linux 101/201: CS/Linux-101.md
+    - 实用技能:
+      - Linux: CS/Linux.md
       - git: CS/git.md
       - 硬件设施: CS/hardware.md
       - SadServers: CS/SadServers.md
@@ -50,7 +50,7 @@ nav:
 
     - 编程语言:
       - C: CS/C.md
-      - C++: CS/OOP.md
+      - C++: CS/CPP.md
       - CUDA C++: CS/CUDA.md
 
   - AI:

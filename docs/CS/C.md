@@ -1,10 +1,11 @@
 # C 语言
 
-!!! notes
+!!! tip "备注"
     - C 是由 Dennis Ritchie 于 1972 年在贝尔实验室开发的通用编程语言，是现代高级语言的重要基石。
     - 本文省略了大部分基础语法知识，只记录了一些易错点以及要点。
 
-!!! 相关课程
+!!! 参考资料
+    - ZJU 2024-2025 秋冬，CS1001G，C 程序设计基础及实验
     - [竺可桢学院程序设计辅学](https://ckc-agc.bowling233.top/programming/24fall)
 
 ---
@@ -243,7 +244,26 @@
 
 要点：`cmp(*a, *b)` 比较，强制使用指针，返回值 $>0$ 表示 $a>b$，$=0$ 表示 $a=b$，$<0$ 表示 $a<b$。
 
-## 一些奇妙的语法特性（C 尖、程算）
+## 编译流程
+
+- 每个 C 语言程序都必须包含一个 `main` 函数，作为程序的入口。
+
+    ```cpp
+    int main(void);
+    int main(int argc, char *argv[]);
+    ```
+
+    `main` 的调用者是操作系统。操作系统会等待 `main` 的返回值，用于告知操作系统程序的执行状态（`0` 表示正常结束）。
+
+- 什么是 GCC 编译器？
+
+    - GNU 项目旨在开发一个完全自由的操作系统以及配套的软件。GCC 最早是 GNU C Compiler 的简称，现在代表 GNU Compiler Collection。这表明它不是单个程序，而是一系列编译工具的集合，包括了 C、C++、Objective-C、Fortran、Ada、Go、D 等语言的前端，以及汇编器、链接器等后端，和这些语言的库文件。
+
+- 编译流程：
+
+    ![](assets/C_3.png)
+
+## 一些错难题
 
 - 第一题
 
@@ -349,22 +369,8 @@
 
     注意 `arr1` 的内容为 `abcd\0`，而 `arr2` 的内容仅为 `abcd`。`sizeof` 是一直找直到访问完所有地址，而 `strlen` 是找到第一个 `\0`。
 
-## 编译流程
+## 扩展阅读
 
-- 每个 C 语言程序都必须包含一个 `main` 函数，作为程序的入口。
-
-    ```cpp
-    int main(void);
-    int main(int argc, char *argv[]);
-    ```
-
-    `main` 的调用者是操作系统。操作系统会等待 `main` 的返回值，用于告知操作系统程序的执行状态（`0` 表示正常结束）。
-
-- 什么是 GCC 编译器？
-
-    - GNU 项目旨在开发一个完全自由的操作系统以及配套的软件。GCC 最早是 GNU C Compiler 的简称，现在代表 GNU Compiler Collection。这表明它不是单个程序，而是一系列编译工具的集合，包括了 C、C++、Objective-C、Fortran、Ada、Go、D 等语言的前端，以及汇编器、链接器等后端，和这些语言的库文件。
-
-- 编译流程：
-
-    ![](assets/C_3.png)
-
+- [地址、指针、数组 - 45gfg9's Tree](https://tree.45gfg9.net/c/pointers/#_2)
+    - 之前完整读过箱子的文章，感觉受益匪浅。C 语言，很重要的一点是搞清楚每个变量的 type，抓住核心才容易去理解何为指针、何为“多维数组”。
+- [动态链接、系统调用与 C 的 inline - 45gfg9's Heap](https://heap.45gfg9.net/t/def7b3875299/)
