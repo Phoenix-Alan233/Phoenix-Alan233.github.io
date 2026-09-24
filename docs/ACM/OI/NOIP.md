@@ -14,11 +14,54 @@
 >
 > 根的深度为 $1$，$n,q\le 5\times 10^5$。
 
+## NOIP 2022
+
+| # | Problem | Tag | Difficulty | Completion |
+| :---: | :---: | :---: | :---: | :---: |
+| ⭐️ NOIP 2022 T2 | 喵了个喵 | 紫 | [$\checkmark$](https://qoj.ac/submission/3022514) |
+
+
+## NOIP 2021
+
+| # | Problem | Tag | Difficulty | Completion |
+| :---: | :---: | :---: | :---: | :---: |
+| NOIP 2021 T1 | 报数 | 模拟 | 黄 | [$\checkmark$](https://qoj.ac/submission/3022426) |
+| NOIP 2021 T2 | 数列 | DP | 蓝 | [$\checkmark$](https://qoj.ac/submission/2962299) |
+| NOIP 2021 T3 | 方差 | 思维，DP | 紫 | [$\checkmark$](https://qoj.ac/submission/2964573) |
+| NOIP 2021 T4 | 棋局 |
+
+- ~~NOIP 2021 T4 就没会过~~
+
+### 数列
+
+我们按值域从小到大 dp，枚举每个数选多少次。设 $dp[i][j][q][s]$ 表示值域 $0,1,\cdots,i-1$ 已经处理完，选了 $j$ 个数，传入第 $i$ 位的进位为 $q$，并且第 $0\sim i-1$ 位中已经有 $s$ 个 $1$ 时，所有方案的权值和。
+
+接下来枚举选 $t$ 个 $i$，其中 $0\le t\le n-j$。这一位总共有 $q+t$，于是：
+
+- 当前位为 $(q+t)\bmod 2$，把它加到 $s$ 上；
+
+- 传给下一位的进位为 $\lfloor(q+t)/2\rfloor$；
+
+- 新选的这些数贡献 $v_i^t$，并且要从剩下的 $n-j$ 个位置里选出 $t$ 个来放，所以还要乘上 $\binom{n-j}{t}$。
+
+因此转移为：
+
+$$
+dp\left[i+1\right]\left[j+t\right]\left[\left\lfloor\frac{q+t}{2}\right\rfloor\right]\left[s+(q+t)\bmod 2\right]
+\mathrel{+}=dp[i][j][q][s]\binom{n-j}{t}v_i^t.
+$$
+
+初始化 $dp[0][0][0][0]=1$，其他状态为 $0$，枚举 $i=0\sim m$ 依次转移。低位确定以后就不会再变化，所以 $s>k$ 的状态可以直接扔掉。
+
+处理完 $m$ 以后还有一个小细节：进位 $q$ 可能没有清空，它就是剩下那些高位组成的数，因此还要把 $\operatorname{popcount}(q)$ 算进去，不能只判断 $s\le k$。答案就是所有满足 $s+\operatorname{popcount}(q)\le k$ 的 $dp[m+1][n][q][s]$ 之和。
+
+时间复杂度 $O(mn^3k)$，滚动数组可以做到空间复杂度 $O(n^2k+m)$。
+
 ## NOIP 2020
 
 | # | Problem | Tag | Difficulty | Completion |
 | :---: | :---: | :---: | :---: | :---: |
-| NOIP 2020 T3 | 移球游戏 | 构造，分治 | 紫 |
+| ⭐️ NOIP 2020 T3 | 移球游戏 | 构造，分治 | 紫 |
 | NOIP 2020 T4 | 微信步数 | 数学，多项式，拉格朗日插值 | 紫 | [$\checkmark$](https://qoj.ac/submission/3013864) |
 
 ### 移球游戏

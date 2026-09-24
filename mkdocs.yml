@@ -49,9 +49,9 @@ nav:
       - 操作系统: CS/OS.md
 
     - 编程语言:
-      - C: CS/C.md
-      - C++: CS/CPP.md
-      - CUDA C++: CS/CUDA.md
+      - C 语言: CS/C.md
+      - C++ 语言: CS/CPP.md
+      - CUDA 编程: CS/CUDA.md
 
   - AI:
     - 概览: AI/index.md
